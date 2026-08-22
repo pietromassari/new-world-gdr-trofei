@@ -1,56 +1,11 @@
 [
   {
-    "id": "on-3d2y-1-inizia-l-allenamento",
-    "category": "ON",
-    "name": "3d2y 1 – Inizia l'allenamento!",
-    "description": "Gioca per 3 mesi, attivamente, con lo stesso personaggio! (E' possibile richiedere un trofeo \"3d2y\" alla volta.) [Trofeo premio assegnabile su valutazione dello Staff]",
-    "px": 100,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
-    "id": "on-3d2y-2-le-prime-fasi",
-    "category": "ON",
-    "name": "3d2y 2 – Le prime fasi!",
-    "description": "Continua a giocare attivamente per altre 2 settimane con lo stesso personaggio, richiede \"3d2y - Inizio dell'allenamento\" e 30 azioni.",
-    "px": 100,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
-    "id": "on-3d2y-3-chi-la-dura-la-vince",
-    "category": "ON",
-    "name": "3d2y 3 – Chi la dura la vince!",
-    "description": "Continua a giocare attivamente per altre 2 settimane con lo stesso personaggio, richiede \"Le prime fasi!\" e 30 azioni.",
-    "px": 100,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
-    "id": "on-3d2y-4-alla-ricerca-della-perfezione",
-    "category": "ON",
-    "name": "3d2y 4 – Alla ricerca della perfezione!",
-    "description": "Continua a giocare attivamente per altre 2 settimane con lo stesso personaggio, richiede \"Chi l'ha dura la vince!\" e 30 azioni.",
-    "px": 100,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
-    "id": "on-3d2y-5-fine-addestramento",
-    "category": "ON",
-    "name": "3d2y 5 – Fine addestramento!",
-    "description": "Continua a giocare attivamente, per altre 2 settimane, con lo stesso personaggio, richiede \"Alla ricerca della perfezione!\" e 30 azioni.",
-    "px": 100,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
     "id": "on-a-mano-armata",
     "category": "ON",
     "name": "A mano Armata",
     "description": "Possiedi almeno 5 differenti armi dal livello minimo 7 (armi da Taglio, Botta, Fuoco o Lancio; no Dial etc)",
     "px": 10,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -68,7 +23,7 @@
     "name": "Ahià! Fa ancora male!",
     "description": "Vieni curato per almeno 5 volte da un PG (non valido se ti curi da solo) (occorre stamp singole giocate)",
     "px": 10,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -86,7 +41,7 @@
     "name": "Ai Fornelli!",
     "description": "Sfama 5 diversi PG (occorre stamp singole giocate)",
     "px": 10,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -95,7 +50,7 @@
     "name": "Al Top!",
     "description": "Vinci un duello PvP per KO dell'avversario [Non valido per resa o se pv avversario inferiori al 50%]",
     "px": 10,
-    "target": 1,
+    "target": 50,
     "unit": "requisiti"
   },
   {
@@ -120,7 +75,7 @@
     "id": "on-amico-di-tutti",
     "category": "ON",
     "name": "Amico di tutti",
-    "description": "Gioca con almeno 20pg nell'arco di una settimana. (Occorre stamp singole giocate).",
+    "description": "Gioca con almeno 20pg nell’arco di una settimana. (Occorre stamp singole giocate).",
     "px": 100,
     "target": 1,
     "unit": "requisiti"
@@ -130,15 +85,6 @@
     "category": "ON",
     "name": "Antò, fa caldo",
     "description": "Gioca ad Alabasta.",
-    "px": 10,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
-    "id": "on-anto-fa-freddo",
-    "category": "ON",
-    "name": "Antò, fa freddo",
-    "description": "Gioca a Drum",
     "px": 10,
     "target": 1,
     "unit": "requisiti"
@@ -174,7 +120,7 @@
     "id": "on-battaglia-navale",
     "category": "ON",
     "name": "Battaglia navale",
-    "description": "Combatti a Bordo della tua nave utilizzando l'artiglieria di bordo. Fronteggiando un'altra nave.",
+    "description": "Combatti a Bordo della tua nave utilizzando l’artiglieria di bordo. Fronteggiando un’altra nave.",
     "px": 15,
     "target": 1,
     "unit": "requisiti"
@@ -185,7 +131,7 @@
     "name": "Bell'arma!",
     "description": "Riconosci 3 armi e la loro fattura, qualità almeno 7 (occorre stamp singole giocate)",
     "px": 10,
-    "target": 1,
+    "target": 3,
     "unit": "requisiti"
   },
   {
@@ -198,21 +144,12 @@
     "unit": "requisiti"
   },
   {
-    "id": "on-buona-la-frutta",
-    "category": "ON",
-    "name": "Buona la frutta!",
-    "description": "Gioca ed interagisci per la prima volta con un PG che ha mangiato un Frutto del Diavolo (occorre stamp singole giocate)",
-    "px": 10,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
     "id": "on-businessman",
     "category": "ON",
     "name": "Businessman",
     "description": "Possiedi come primo proprietario 10 Edifici o attività commerciali (minimo qualità 7).",
     "px": 15,
-    "target": 1,
+    "target": 10,
     "unit": "requisiti"
   },
   {
@@ -266,7 +203,7 @@
     "name": "Ci sono già stato qui?",
     "description": "Esplora almeno 10 isole di trama. Non valido se non presenti nella mappa ufficiale.",
     "px": 25,
-    "target": 1,
+    "target": 10,
     "unit": "requisiti"
   },
   {
@@ -284,7 +221,7 @@
     "name": "Costruiamo la Storia!",
     "description": "Partecipa ed esci vittorioso (senza finire ko) da una quest (MQ e ME esclusi, almeno 3 persone)",
     "px": 10,
-    "target": 1,
+    "target": 3,
     "unit": "requisiti"
   },
   {
@@ -293,14 +230,14 @@
     "name": "Critico d'Arte",
     "description": "Sfrutta le tue conoscenze artistiche per realizzare 5 opere differenti (dipinti, disegni, sculture o anche danza) (occorre stamp singole giocate)",
     "px": 12,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
     "id": "on-cuore-rosso",
     "category": "ON",
     "name": "Cuore Rosso",
-    "description": "Raggiungi il grado di \"Comandante\" nell'Armata Rivoluzionaria",
+    "description": "Raggiungi il grado di “Comandante” nell’Armata Rivoluzionaria",
     "px": 40,
     "target": 1,
     "unit": "requisiti"
@@ -356,7 +293,7 @@
     "name": "Dominiamo la Storia!",
     "description": "Partecipa ed esci vittorioso (senza finire ko) da almeno cinque quest (MQ e ME esclusi, almeno 3 persone)",
     "px": 20,
-    "target": 1,
+    "target": 3,
     "unit": "requisiti"
   },
   {
@@ -365,7 +302,7 @@
     "name": "Don't stop the party",
     "description": "Fai una giocata di almeno 10 turni (occorrono stamp delle giocate; quest non valide).",
     "px": 20,
-    "target": 1,
+    "target": 10,
     "unit": "requisiti"
   },
   {
@@ -437,7 +374,7 @@
     "name": "Esploratore DOC",
     "description": "Esplora almeno 5 isole di trama. Non valido se non presenti nella mappa ufficiale.",
     "px": 20,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -446,7 +383,7 @@
     "name": "Eventi casuali",
     "description": "Partecipa a 3 MQ (non valido nel caso si esca prima di fine quest)",
     "px": 10,
-    "target": 1,
+    "target": 3,
     "unit": "requisiti"
   },
   {
@@ -500,7 +437,7 @@
     "name": "Flop!",
     "description": "Perdi 5 duelli PVP [Non valido per resa]",
     "px": 40,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -527,7 +464,7 @@
     "name": "Giramondo",
     "description": "Spostati in almeno 3 isole differenti",
     "px": 10,
-    "target": 1,
+    "target": 3,
     "unit": "requisiti"
   },
   {
@@ -536,7 +473,7 @@
     "name": "Gli affari sono affari!",
     "description": "Possiedi come primo proprietario 3 edifici o attività commerciali.",
     "px": 8,
-    "target": 1,
+    "target": 3,
     "unit": "requisiti"
   },
   {
@@ -599,7 +536,7 @@
     "name": "Ho l'X Factor!",
     "description": "Suona melodie che mutino le statistiche di almeno 5 personaggi differenti, anche in giocate diverse",
     "px": 10,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -608,7 +545,7 @@
     "name": "Il Branco",
     "description": "Possiedi come primo proprietario 3 differenti animali con livello minimo 6",
     "px": 10,
-    "target": 1,
+    "target": 3,
     "unit": "requisiti"
   },
   {
@@ -617,7 +554,7 @@
     "name": "Il mio Mestiere è il Cantiere",
     "description": "Costruisci 5 edifici o navi",
     "px": 10,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -626,7 +563,7 @@
     "name": "Il mio Mestiere è la Forgia",
     "description": "Costruisci 5 armi diverse",
     "px": 10,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -653,7 +590,7 @@
     "name": "Immortale",
     "description": "Successo in quest senza ricevere danni (MQ e ME esclusi, almeno 4 turni).",
     "px": 15,
-    "target": 1,
+    "target": 4,
     "unit": "requisiti"
   },
   {
@@ -662,7 +599,7 @@
     "name": "Imprenditore",
     "description": "Possiedi come primo proprietario 5 edifici o attività commerciali (minimo qualità 7).",
     "px": 10,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -743,7 +680,7 @@
     "name": "L'Ultimo Samurai",
     "description": "Unico Sopravvissuto in quest (no libere, duelli o solitarie | almeno 5 player complessivi)",
     "px": 15,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -768,7 +705,7 @@
     "id": "on-la-logica-non-e-un-opinione",
     "category": "ON",
     "name": "La logica non è un'opinione",
-    "description": "Compi un atto completamente folle, surreale, non utile e completamente insensato in una quest, in modo da ottenere quanti più svantaggi possibili.",
+    "description": "Compi un atto completamente folle, surreale, non utile e completamente insensato in una quest, in modo da ottenere quanti più svantaggi possibili. (Es. colpire un meteorite con un pugnale, mettere un alveare in testa subendo atroci sofferenze, automutilarsi un braccio per salutare meglio gli amici distanti). Valido solo per svantaggi seri nella quest oppure permanenti.",
     "px": 20,
     "target": 1,
     "unit": "requisiti"
@@ -779,7 +716,7 @@
     "name": "La Mamma me le dava più forti",
     "description": "Successo in QT, in QG, in una Globale, o in un Duello con ferite precedenti (almeno -25% pv dei totali)",
     "px": 10,
-    "target": 1,
+    "target": 25,
     "unit": "requisiti"
   },
   {
@@ -851,7 +788,7 @@
     "name": "Mappamondo",
     "description": "Esplora almeno 20 isole di trama. Non valido se non presenti nella mappa ufficiale.",
     "px": 30,
-    "target": 1,
+    "target": 20,
     "unit": "requisiti"
   },
   {
@@ -860,14 +797,14 @@
     "name": "Medicando",
     "description": "Cura 5 PG differenti (occorre stamp singole giocate)",
     "px": 10,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
     "id": "on-mediocri-e-meglio",
     "category": "ON",
     "name": "Mediocri è meglio",
-    "description": "Sblocca cinque quest a seguito di una missiva di Trama.",
+    "description": "Sblocca cinque quest a seguito di una missiva di Trama. Questo trofeo sarà ottenibile dopo aver ricevuto dal PNG Trama altrettante missive con scritto [COMPLIMENTI! HAI SBLOCCATO UNA QUEST].",
     "px": 15,
     "target": 1,
     "unit": "requisiti"
@@ -905,7 +842,7 @@
     "name": "Mhhh! Squisito!",
     "description": "Vieni sfamato per almeno 5 volte da un PG (non valido se ti sfami da solo) (occorre stamp singole giocate)",
     "px": 10,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -914,7 +851,7 @@
     "name": "Mi piace questo posto!",
     "description": "Gioca 10 volte sulla stessa isola (occorrono stamp delle giocate).",
     "px": 10,
-    "target": 1,
+    "target": 10,
     "unit": "requisiti"
   },
   {
@@ -923,7 +860,7 @@
     "name": "Monkey D. Dragon",
     "description": "Gioca con un PG Rivoluzionario avente fama negativa pari a 20.000 o superiore.",
     "px": 10,
-    "target": 1,
+    "target": 20,
     "unit": "requisiti"
   },
   {
@@ -932,7 +869,7 @@
     "name": "Monkey D. Garp",
     "description": "Gioca con un PG Marine avente fama positiva pari a 20.000 o superiore.",
     "px": 10,
-    "target": 1,
+    "target": 20,
     "unit": "requisiti"
   },
   {
@@ -963,15 +900,6 @@
     "unit": "requisiti"
   },
   {
-    "id": "on-not-too-old",
-    "category": "ON",
-    "name": "Not too old",
-    "description": "Gioca in un'isola del Vecchio Mondo",
-    "px": 10,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
     "id": "on-occhio-per-occhio",
     "category": "ON",
     "name": "Occhio per occhio",
@@ -984,7 +912,7 @@
     "id": "on-off-you-go",
     "category": "ON",
     "name": "Off you go!",
-    "description": "Sblocca una quest a seguito di una missiva di Trama.",
+    "description": "Sblocca una quest a seguito di una missiva di Trama. Questo trofeo sarà ottenibile dopo aver ricevuto dal PNG Trama una missiva con scritto [COMPLIMENTI! HAI SBLOCCATO UNA QUEST].",
     "px": 20,
     "target": 1,
     "unit": "requisiti"
@@ -1017,21 +945,12 @@
     "unit": "requisiti"
   },
   {
-    "id": "on-parte-l-avventura",
-    "category": "ON",
-    "name": "Parte l'Avventura!",
-    "description": "Fai le tue prime giocate di almeno 10 azioni totali (conferma da Log Berry)",
-    "px": 25,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
     "id": "on-party-hard",
     "category": "ON",
     "name": "Party Hard",
     "description": "Gioca con 10 PG contemporaneamente (occorrono stamp delle giocate; quest non valide).",
     "px": 25,
-    "target": 1,
+    "target": 10,
     "unit": "requisiti"
   },
   {
@@ -1058,7 +977,7 @@
     "name": "Poliedrico",
     "description": "Raggiungi almeno il livello 5 in una classe diversa da quella base",
     "px": 10,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -1076,7 +995,7 @@
     "name": "Pusher",
     "description": "Sviluppa 5 veleni (occorre stamp singole giocate)",
     "px": 10,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -1103,7 +1022,7 @@
     "name": "Re del Ring",
     "description": "Vinci 10 duelli PVP.",
     "px": 50,
-    "target": 1,
+    "target": 10,
     "unit": "requisiti"
   },
   {
@@ -1137,7 +1056,7 @@
     "id": "on-ribelle-modello",
     "category": "ON",
     "name": "Ribelle Modello",
-    "description": "Raggiungi il grado di \"Ufficiale\" nell'Armata Rivoluzionaria",
+    "description": "Raggiungi il grado di “Ufficiale” nell’Armata Rivoluzionaria",
     "px": 20,
     "target": 1,
     "unit": "requisiti"
@@ -1157,7 +1076,7 @@
     "name": "Rischio di overdose",
     "description": "Utilizza per almeno 5 volte un veleno o un antidoto (occorre stamp singole giocate)",
     "px": 10,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -1173,16 +1092,16 @@
     "id": "on-royal-rumble",
     "category": "ON",
     "name": "Royal Rumble",
-    "description": "Partecipa a una quest Duello con altri 9 player (10 pg totali).",
+    "description": "Partecipa a una quest Duello con altri 9 player (10 pg totali). Valido solo con azioni di avvicinamento, nessun PNG e organizzazione OFF.",
     "px": 35,
-    "target": 1,
+    "target": 9,
     "unit": "requisiti"
   },
   {
     "id": "on-salpiamo",
     "category": "ON",
     "name": "Salpiamo!",
-    "description": "Fatti trasportare da un PG navigatore da un'isola all'altra (occorre stamp singole giocate)",
+    "description": "Fatti trasportare da un PG navigatore da un’isola all’altra (occorre stamp singole giocate)",
     "px": 5,
     "target": 1,
     "unit": "requisiti"
@@ -1211,16 +1130,7 @@
     "name": "Shanks il Rosso",
     "description": "Gioca con un PG Pirata avente fama negativa pari a 20.000 o superiore.",
     "px": 10,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
-    "id": "on-si-signor-capitano",
-    "category": "ON",
-    "name": "Sì Signor Capitano!",
-    "description": "Gioca ed interagisci con un Capitano Pirata (occorre stamp singole giocate)",
-    "px": 8,
-    "target": 1,
+    "target": 20,
     "unit": "requisiti"
   },
   {
@@ -1274,7 +1184,7 @@
     "name": "Sta per esplodere",
     "description": "Utilizza per almeno 5 volte composti alchemici in quest (occorre stamp singole giocate)",
     "px": 10,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -1283,7 +1193,7 @@
     "name": "Stai bene Fuffy?",
     "description": "Cura 3 volte un animale (occorre stamp singole giocate)",
     "px": 10,
-    "target": 1,
+    "target": 3,
     "unit": "requisiti"
   },
   {
@@ -1301,7 +1211,7 @@
     "name": "Superbo",
     "description": "Successo in una QG, in una QE, in una Globale, o in un Duello senza alcun uso di Skill Attive (almeno 4 turni di gioco totali della quest)",
     "px": 15,
-    "target": 1,
+    "target": 4,
     "unit": "requisiti"
   },
   {
@@ -1310,7 +1220,7 @@
     "name": "T. Kon Losco",
     "description": "Riconosci 5 PG tramite la loro fama (occorre stamp singole giocate)",
     "px": 10,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -1319,7 +1229,7 @@
     "name": "Tanta casualità",
     "description": "Partecipa a 10 MQ (non valido nel caso si esca prima di fine quest)",
     "px": 15,
-    "target": 1,
+    "target": 10,
     "unit": "requisiti"
   },
   {
@@ -1337,7 +1247,7 @@
     "name": "Taxi Driver",
     "description": "Effettua da navigatore un viaggio da isola ad isola trasportando almeno 5 diversi PG contemporaneamente (occorre stamp singole giocate)",
     "px": 10,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -1355,7 +1265,7 @@
     "name": "The Champions!",
     "description": "Vinci 5 duelli PVP",
     "px": 40,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -1409,14 +1319,14 @@
     "name": "Unbroken",
     "description": "Perdi 10 duelli PVP [Non valido per resa]",
     "px": 50,
-    "target": 1,
+    "target": 10,
     "unit": "requisiti"
   },
   {
     "id": "on-uncle-sam-1",
     "category": "ON",
     "name": "Uncle Sam! 1",
-    "description": "Raggiungi il grado di \"Caporale\"",
+    "description": "Raggiungi il grado di “Caporale”",
     "px": 10,
     "target": 1,
     "unit": "requisiti"
@@ -1425,7 +1335,7 @@
     "id": "on-uncle-sam-2",
     "category": "ON",
     "name": "Uncle Sam! 2",
-    "description": "Raggiungi il grado di \"Maresciallo\"",
+    "description": "Raggiungi il grado di “Maresciallo”",
     "px": 15,
     "target": 1,
     "unit": "requisiti"
@@ -1434,7 +1344,7 @@
     "id": "on-uncle-sam-3",
     "category": "ON",
     "name": "Uncle Sam! 3",
-    "description": "Raggiungi il grado di \"Capitano di Corvetta\"",
+    "description": "Raggiungi il grado di “Capitano di Corvetta”",
     "px": 25,
     "target": 1,
     "unit": "requisiti"
@@ -1443,7 +1353,7 @@
     "id": "on-uncle-sam-4",
     "category": "ON",
     "name": "Uncle Sam! 4",
-    "description": "Raggiungi il grado di \"Commodoro\"",
+    "description": "Raggiungi il grado di “Commodoro”",
     "px": 35,
     "target": 1,
     "unit": "requisiti"
@@ -1452,7 +1362,7 @@
     "id": "on-uncle-sam-5",
     "category": "ON",
     "name": "Uncle Sam! 5",
-    "description": "Raggiungi il grado di \"Viceammiraglio\"",
+    "description": "Raggiungi il grado di “Viceammiraglio”",
     "px": 50,
     "target": 1,
     "unit": "requisiti"
@@ -1481,7 +1391,7 @@
     "name": "V.I.P.",
     "description": "Incontra un PNG importante di Trama, schedato e con almeno 50.000 fama, interagendoci [su valutazione dello Staff]",
     "px": 15,
-    "target": 1,
+    "target": 50,
     "unit": "requisiti"
   },
   {
@@ -1560,7 +1470,7 @@
     "id": "on-background-saggi-approved",
     "category": "ON",
     "name": "[Background] Saggi Approved!",
-    "description": "Proponi il tuo background alla supervisione del gruppo saggi.",
+    "description": "Proponi il tuo background alla supervisione del gruppo saggi, seguendo le regole espresse in guida, nella sezione “Creazione del Personaggio”, e fallo approvare! Se approvato, la storia del tuo personaggio non sarà più modificabile, ma al massimo aggiornabile per eventi ON-Game. Il trofeo verrà assegnato SOLO nel momento in cui il BG si collega alla trama globale. (Trofeo richiedibile anche per inserimento di gruppi particolari per gioco e merito).",
     "px": 20,
     "target": 1,
     "unit": "requisiti"
@@ -1632,9 +1542,9 @@
     "id": "off-amante-delle-feste",
     "category": "OFF",
     "name": "Amante delle feste!",
-    "description": "Interagisci con almeno 5 PG, oltre al tuo contemporaneamente con almeno 3 azioni cadauno, per 10 volte differenti.",
+    "description": "Interagisci con almeno 5 PG, oltre al tuo contemporaneamente con almeno 3 azioni cadauno (occorrono stamp delle giocate; quest non valide), per 10 volte differenti.",
     "px": 50,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -1643,23 +1553,14 @@
     "name": "Amico dei nabbetti",
     "description": "Gioca almeno 5 volte con un PG neo-iscritto (da meno di 30 giorni) (occorre stamp singole giocate)",
     "px": 25,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
-    "id": "off-anche-io-su-gdr-online",
-    "category": "OFF",
-    "name": "Anche io su Gdr-Online!",
-    "description": "Lascia una recensione nel portale di Gdr-Online relativo alla pagina del New World GdR.",
-    "px": 100,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
     "id": "off-ancor-piu-bravo",
     "category": "OFF",
     "name": "Ancor più bravo!",
-    "description": "Sviluppa più premi secondari sullo stesso pg (haki e/o abilità pro).",
+    "description": "Sviluppa più premi secondari sullo stesso pg (haki e/o abilità pro). I colori dell'haki sono considerati come dei premi secondari diversi: sviluppare l'haki dell'armatura e l'haki dell'osservazione, per esempio, permetterà di ottenere il trofeo.",
     "px": 25,
     "target": 1,
     "unit": "requisiti"
@@ -1679,7 +1580,7 @@
     "name": "Arlong",
     "description": "Raggiungi 10000 punti Fama Positiva o Negativa",
     "px": 10,
-    "target": 1,
+    "target": 10000,
     "unit": "requisiti"
   },
   {
@@ -1715,7 +1616,7 @@
     "name": "Barbanera",
     "description": "Raggiungi 50000 punti Fama Positiva o Negativa",
     "px": 50,
-    "target": 1,
+    "target": 50000,
     "unit": "requisiti"
   },
   {
@@ -1724,7 +1625,7 @@
     "name": "Benvenuto tra Noi! 1",
     "description": "Raggiungi il livello D (25-39) entro sei mesi dalla data d'Iscrizione. Valido solo per neo-iscritti!",
     "px": 100,
-    "target": 1,
+    "target": 25,
     "unit": "requisiti"
   },
   {
@@ -1733,7 +1634,7 @@
     "name": "Benvenuto tra Noi! 2",
     "description": "Raggiungi il livello B (55-69) entro un anno dalla data d'iscrizione. Valido solo per i neo-iscritti!",
     "px": 150,
-    "target": 1,
+    "target": 55,
     "unit": "requisiti"
   },
   {
@@ -1778,7 +1679,7 @@
     "name": "Buggy il Clown",
     "description": "Raggiungi 1000 punti Fama Positiva o Negativa",
     "px": 5,
-    "target": 1,
+    "target": 1000,
     "unit": "requisiti"
   },
   {
@@ -1929,7 +1830,7 @@
     "id": "off-buon-samaritano",
     "category": "OFF",
     "name": "Buon Samaritano",
-    "description": "Regala un oggetto dal valore di mercato di almeno 10 milioni di berry ad un altro pg.",
+    "description": "Regala un oggetto dal valore di mercato di almeno 10milioni di berry ad un altro pg.",
     "px": 25,
     "target": 1,
     "unit": "requisiti"
@@ -1958,25 +1859,16 @@
     "name": "Che bello fare regali",
     "description": "Regala 5 oggetti di vario tipo del valore cadauno di almeno un milione ad altri pg.",
     "px": 25,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
     "id": "off-ci-penso-io",
     "category": "OFF",
     "name": "Ci penso io!",
-    "description": "Ricopri, attivamente, un ruolo OFF per almeno 3 mesi.",
+    "description": "Ricopri, attivamente, un ruolo OFF per almeno 3 mesi (esclusi Fati, Guide e Grafici, per cui sono stati creati dei trofei specifici, e i ruoli attualmente non attivi).",
     "px": 10,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
-    "id": "off-ciao-pivello",
-    "category": "OFF",
-    "name": "Ciao pivello!",
-    "description": "Gioca con un PG neo-iscritto (da meno di 30 giorni) (occorre uno stamp singole giocate)",
-    "px": 10,
-    "target": 1,
+    "target": 3,
     "unit": "requisiti"
   },
   {
@@ -1985,7 +1877,7 @@
     "name": "Coach",
     "description": "Raggiungi il livello 30 in una classe",
     "px": 5,
-    "target": 1,
+    "target": 30,
     "unit": "requisiti"
   },
   {
@@ -1994,7 +1886,7 @@
     "name": "Collezionista Base",
     "description": "Sblocca 25 trofei.",
     "px": 15,
-    "target": 1,
+    "target": 25,
     "unit": "requisiti"
   },
   {
@@ -2003,7 +1895,7 @@
     "name": "Collezionista Pro",
     "description": "Sblocca 45 trofei.",
     "px": 15,
-    "target": 1,
+    "target": 45,
     "unit": "requisiti"
   },
   {
@@ -2012,7 +1904,7 @@
     "name": "Collezionista Star",
     "description": "Sblocca 60 trofei.",
     "px": 15,
-    "target": 1,
+    "target": 60,
     "unit": "requisiti"
   },
   {
@@ -2021,7 +1913,7 @@
     "name": "Collezionista Top!",
     "description": "Sblocca 80 trofei.",
     "px": 15,
-    "target": 1,
+    "target": 80,
     "unit": "requisiti"
   },
   {
@@ -2030,7 +1922,7 @@
     "name": "Collezionista [Over] the Apex!",
     "description": "Sblocca 100 trofei.",
     "px": 15,
-    "target": 1,
+    "target": 100,
     "unit": "requisiti"
   },
   {
@@ -2039,7 +1931,7 @@
     "name": "Collezionista [Over] the Imagination",
     "description": "Sblocca 150 Trofei",
     "px": 20,
-    "target": 1,
+    "target": 150,
     "unit": "requisiti"
   },
   {
@@ -2048,7 +1940,7 @@
     "name": "Collezionista [Over] the Legend",
     "description": "Sblocca 200 Trofei",
     "px": 30,
-    "target": 1,
+    "target": 200,
     "unit": "requisiti"
   },
   {
@@ -2075,7 +1967,7 @@
     "name": "Crocodile",
     "description": "Raggiungi 20000 punti Fama Positiva o Negativa",
     "px": 20,
-    "target": 1,
+    "target": 20000,
     "unit": "requisiti"
   },
   {
@@ -2088,30 +1980,21 @@
     "unit": "requisiti"
   },
   {
-    "id": "off-discord",
-    "category": "OFF",
-    "name": "Discord",
-    "description": "Entra nel server Discord della land. (Occorre screen)",
-    "px": 25,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
     "id": "off-doflamingo",
     "category": "OFF",
     "name": "Doflamingo",
     "description": "Raggiungi 35000 punti Fama Positiva o Negativa",
     "px": 35,
-    "target": 1,
+    "target": 35000,
     "unit": "requisiti"
   },
   {
     "id": "off-esperto-del-ruolo",
     "category": "OFF",
     "name": "Esperto del ruolo",
-    "description": "Ricopri, attivamente, un ruolo OFF per almeno 6 mesi.",
+    "description": "Ricopri, attivamente, un ruolo OFF per almeno 6 mesi (esclusi Fati, Guide e Grafici, per cui sono stati creati dei trofei specifici, e i ruoli attualmente non attivi).",
     "px": 20,
-    "target": 1,
+    "target": 6,
     "unit": "requisiti"
   },
   {
@@ -2156,7 +2039,7 @@
     "name": "Gol D. Roger",
     "description": "Raggiungi 100000 punti Fama Positiva o Negativa",
     "px": 300,
-    "target": 1,
+    "target": 100000,
     "unit": "requisiti"
   },
   {
@@ -2165,16 +2048,16 @@
     "name": "Guru",
     "description": "Raggiungi il livello 70 in una classe",
     "px": 20,
-    "target": 1,
+    "target": 70,
     "unit": "requisiti"
   },
   {
     "id": "off-hanshi-il-maestro-dei-maestri",
     "category": "OFF",
     "name": "Hanshi, il Maestro dei Maestri",
-    "description": "Insegna una tonalità dell'haki a 5 pg diversi.",
+    "description": "Insegna una tonalità dell'haki a 5 pg diversi (necessaria nota guida sui pg che l'hanno appresa).",
     "px": 40,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -2208,18 +2091,9 @@
     "id": "off-il-signore-delle-feste",
     "category": "OFF",
     "name": "Il Signore delle Feste!",
-    "description": "Interagisci con almeno 5 PG contemporaneamente con almeno 3 azioni cadauno, per 20 volte differenti.",
+    "description": "Interagisci con almeno 5 PG contemporaneamente con almeno 3 azioni cadauno (occorrono stamp delle giocate; quest non valide), per 20 volte differenti.",
     "px": 50,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
-    "id": "off-in-questa-nave-di-pirati-noi-siamo-capitati",
-    "category": "OFF",
-    "name": "In questa nave di pirati noi siamo capitati",
-    "description": "Fai il porting PG da un altro GDR della piattaforma GDR Online.",
-    "px": 50,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -2228,7 +2102,7 @@
     "name": "Infaticabile 1",
     "description": "Mastera da Fato 3 quest libere di buona qualità",
     "px": 3,
-    "target": 1,
+    "target": 3,
     "unit": "requisiti"
   },
   {
@@ -2237,7 +2111,7 @@
     "name": "Infaticabile 2",
     "description": "Mastera da Fato 7 quest libere di buona qualità (oltre alle 3 di Infaticabile 1)",
     "px": 5,
-    "target": 1,
+    "target": 7,
     "unit": "requisiti"
   },
   {
@@ -2246,7 +2120,7 @@
     "name": "Infaticabile 3",
     "description": "Mastera da Fato 15 quest libere di buona qualità (oltre alle 10 di Infaticabile 1 e 2)",
     "px": 15,
-    "target": 1,
+    "target": 15,
     "unit": "requisiti"
   },
   {
@@ -2255,7 +2129,7 @@
     "name": "It's over 3(000)!",
     "description": "Mastera 3 MQ in un mese.",
     "px": 15,
-    "target": 1,
+    "target": 3,
     "unit": "requisiti"
   },
   {
@@ -2264,7 +2138,7 @@
     "name": "It's over 5(000)!",
     "description": "Mastera 5 MQ in un mese.",
     "px": 35,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -2273,16 +2147,7 @@
     "name": "It's over 9(000)!",
     "description": "Mastera 9 MQ in un mese.",
     "px": 50,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
-    "id": "off-i-m-loving-it",
-    "category": "OFF",
-    "name": "I'm loving it",
-    "description": "Inserisci New World GDR tra i tuoi Preferiti su GDR Online",
-    "px": 40,
-    "target": 1,
+    "target": 9,
     "unit": "requisiti"
   },
   {
@@ -2298,7 +2163,7 @@
     "id": "off-la-media-e-importante",
     "category": "OFF",
     "name": "La media è importante",
-    "description": "Fai 300 azioni entro tre mesi dalla data di iscrizione (log berry). Premio: cinquanta milioni di berry.",
+    "description": "Fai 300 azioni entro tre mesi dalla data di iscrizione (log berry). Premio: cinquanta milioni di berry. [Non valido per recupero pg, cambio pg, doppi]",
     "px": 50,
     "target": 1,
     "unit": "requisiti"
@@ -2334,9 +2199,9 @@
     "id": "off-matrix",
     "category": "OFF",
     "name": "Matrix",
-    "description": "Ricopri, attivamente, il ruolo di Coder per almeno 3 mesi.",
+    "description": "Ricopri, attivamente, il ruolo di Coder per almeno 3 mesi o implementa 3 nuove funzioni o tool in land.",
     "px": 30,
-    "target": 1,
+    "target": 3,
     "unit": "requisiti"
   },
   {
@@ -2345,7 +2210,7 @@
     "name": "Merry il Maggiordomo",
     "description": "Raggiungi 100 punti Fama Positiva o Negativa",
     "px": 5,
-    "target": 1,
+    "target": 100,
     "unit": "requisiti"
   },
   {
@@ -2354,16 +2219,16 @@
     "name": "Miglior amico dei neo-iscritti",
     "description": "Gioca almeno 20 volte con un PG neo-iscritto (almeno da 30 giorni) (occorre stamp singole giocate)",
     "px": 50,
-    "target": 1,
+    "target": 20,
     "unit": "requisiti"
   },
   {
     "id": "off-narratore-provetto",
     "category": "OFF",
     "name": "Narratore provetto!",
-    "description": "Mastera attivamente un duello, una quest guadagno, una QE o una minisaga concludendolo entro 7 giorni dal primo esito.",
+    "description": "Mastera attivamente un duello, una quest guadagno, una QE o una minisaga concludendolo entro 7 giorni dal primo esito ( Valido solo per quest ancora presenti nel Log Quest. Non valido per quest interrotte per rese o abbandoni ).",
     "px": 35,
-    "target": 1,
+    "target": 7,
     "unit": "requisiti"
   },
   {
@@ -2372,7 +2237,7 @@
     "name": "Noi siamo Legione",
     "description": "Masterando attivamente, aiuta il gruppo master ad effettuare almeno 20 quest in un mese.",
     "px": 30,
-    "target": 1,
+    "target": 20,
     "unit": "requisiti"
   },
   {
@@ -2390,42 +2255,33 @@
     "name": "Organizzarsi è Tutto",
     "description": "Mastera da Fato 3 duelli (dall'inizio alla fine, senza passaggi di mano)",
     "px": 5,
-    "target": 1,
+    "target": 3,
     "unit": "requisiti"
   },
   {
     "id": "off-partenza-col-botto-1",
     "category": "OFF",
     "name": "Partenza col Botto! 1",
-    "description": "Sblocca 5 skills (di qualsiasi tipo) o singoli livelli di conoscenza entro 15 giorni dall'iscrizione.",
+    "description": "Sblocca 5 skills (di qualsiasi tipo) o singoli livelli di conoscenza entro 15 giorni dall'iscrizione. [Trofeo valido solo per i neo-iscritti]",
     "px": 50,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
     "id": "off-partenza-col-botto-2",
     "category": "OFF",
     "name": "Partenza col Botto! 2",
-    "description": "Sblocca 8 abilità/skills entro 45 giorni dalla data d'iscrizione.",
+    "description": "Sblocca 8 abilità/skills ( di qualsiasi tipo) entro 45 giorni dalla data d’iscrizione. [Trofeo valido solo per i neo-iscritti]",
     "px": 50,
-    "target": 1,
+    "target": 8,
     "unit": "requisiti"
   },
   {
     "id": "off-per-le-guide-sei-ok",
     "category": "OFF",
     "name": "Per le Guide sei Ok!",
-    "description": "Trofeo dedicato ai \"neo-iscritti\" dopo aver giocato per un arco di tempo adeguato.",
+    "description": "Trofeo dedicato ai \"neo-iscritti\" dopo aver giocato per un arco di tempo adeguato e aver dimostrato di saper regolamento, oltre che \"Buon Gioco\" ( prima di richiedere questo trofeo bisogna contattare il Capo Guide o una Guida esperta per l'ok alla richiesta )",
     "px": 70,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
-    "id": "off-piacere-mio",
-    "category": "OFF",
-    "name": "Piacere mio!",
-    "description": "Presentati nella sezione \"Presentatevi\" della Bacheca (entro un mese dalla data d'iscrizione)",
-    "px": 50,
     "target": 1,
     "unit": "requisiti"
   },
@@ -2433,7 +2289,7 @@
     "id": "off-pilastro-della-land",
     "category": "OFF",
     "name": "Pilastro della Land",
-    "description": "Dieci anni dalla data di iscrizione.",
+    "description": "Dieci anni dalla data di iscrizione o riconoscimento da parte dello Staff per player che si contraddistinguono nelle cariche off per molti anni.",
     "px": 50,
     "target": 1,
     "unit": "requisiti"
@@ -2451,18 +2307,18 @@
     "id": "off-prime-azioni",
     "category": "OFF",
     "name": "Prime azioni",
-    "description": "Scrivi 100 azioni entro un mese dalla data di iscrizione. Premio: trenta milioni di Berry.",
+    "description": "Scrivi 100 azioni entro un mese dalla data di iscrizione (dal log berry). Premio: trenta milioni di Berry. [Non valido per recupero pg, cambio pg, doppi]",
     "px": 30,
-    "target": 1,
+    "target": 100,
     "unit": "requisiti"
   },
   {
     "id": "off-qui-la-festa",
     "category": "OFF",
     "name": "Qui la festa!",
-    "description": "Interagisci con almeno 5 PG contemporaneamente con almeno 3 azioni cadauno.",
+    "description": "Interagisci con almeno 5 PG contemporaneamente con almeno 3 azioni cadauno (occorrono stamp delle giocate; quest non valide)",
     "px": 10,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -2480,23 +2336,23 @@
     "name": "Sensei",
     "description": "Raggiungi il livello 45 in una classe",
     "px": 10,
-    "target": 1,
+    "target": 45,
     "unit": "requisiti"
   },
   {
     "id": "off-sensei-si-nasce-non-si-diventa",
     "category": "OFF",
     "name": "Sensei si nasce, non si diventa.",
-    "description": "Insegna una tonalità dell'haki per 3 volte.",
+    "description": "Insegna una tonalità dell'haki per 3 volte (necessaria nota guida sui pg che l'hanno appresa).",
     "px": 20,
-    "target": 1,
+    "target": 3,
     "unit": "requisiti"
   },
   {
     "id": "off-serve-una-mano",
     "category": "OFF",
     "name": "Serve una mano?",
-    "description": "Ricopri, attivamente, un ruolo OFF per almeno 1 mese.",
+    "description": "Ricopri, attivamente, un ruolo OFF per almeno 1 mese (esclusi Fati, Guide e Grafici, per cui sono stati creati dei trofei specifici, e i ruoli attualmente non attivi).",
     "px": 5,
     "target": 1,
     "unit": "requisiti"
@@ -2534,7 +2390,7 @@
     "name": "Sopraffino",
     "description": "Raggiungi il livello 60 in una classe",
     "px": 15,
-    "target": 1,
+    "target": 60,
     "unit": "requisiti"
   },
   {
@@ -2610,30 +2466,12 @@
     "unit": "requisiti"
   },
   {
-    "id": "off-background-ho-proprio-un-bel-bg",
-    "category": "OFF",
-    "name": "[Background] Ho proprio un bel BG!",
-    "description": "Costruisciti un background secondo le regole espresse in guida.",
-    "px": 40,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
-    "id": "off-background-ho-proprio-un-bell-avatar",
-    "category": "OFF",
-    "name": "[Background] Ho proprio un bell'avatar!",
-    "description": "Inserisci l'avatar del tuo personaggio nella scheda.",
-    "px": 40,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
     "id": "off-cards-e-l-ora-dello-sbusto",
     "category": "OFF",
     "name": "[Cards] È l'ora dello sbusto",
     "description": "Apri 5 pacchetti di carte.",
     "px": 5,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -2667,7 +2505,7 @@
     "id": "off-fm1-star-platinum-heavy-punch",
     "category": "OFF",
     "name": "[FM1] Star Platinum: Heavy Punch",
-    "description": "Vieni nominato Fato del Mese.",
+    "description": "Vieni nominato Fato del Mese. (Ulteriori ricompense verranno annunciate in seguito).",
     "px": 10,
     "target": 1,
     "unit": "requisiti"
@@ -2676,7 +2514,7 @@
     "id": "off-fm2-star-platinum-ora-barrage",
     "category": "OFF",
     "name": "[FM2] Star Platinum: ORA Barrage",
-    "description": "Vieni nominato Fato del Mese cinque volte.",
+    "description": "Vieni nominato Fato del Mese cinque volte. (Ulteriori ricompense verranno annunciate in seguito).",
     "px": 40,
     "target": 1,
     "unit": "requisiti"
@@ -2685,7 +2523,7 @@
     "id": "off-fm3-star-platinum-el-mundo",
     "category": "OFF",
     "name": "[FM3] Star Platinum: EL MUNDO",
-    "description": "Vieni nominato Fato del Mese dieci volte.",
+    "description": "Vieni nominato Fato del Mese dieci volte. (Ulteriori ricompense verranno annunciate in seguito).",
     "px": 100,
     "target": 1,
     "unit": "requisiti"
@@ -2714,7 +2552,7 @@
     "name": "[Referall] 10 tavoli qualità dieci!",
     "description": "10 tuoi Referall raggiungono il grado A (lvl 70-84) o ricevono un premio primario/secondario",
     "px": 60,
-    "target": 1,
+    "target": 10,
     "unit": "requisiti"
   },
   {
@@ -2723,7 +2561,7 @@
     "name": "[Referall] 10 tavoli spaziosi!",
     "description": "10 tuoi Referall raggiungono il grado C (lvl 40-54)",
     "px": 30,
-    "target": 1,
+    "target": 10,
     "unit": "requisiti"
   },
   {
@@ -2732,7 +2570,7 @@
     "name": "[Referall] 2 tavoli qualità dieci!",
     "description": "2 tuoi Referall raggiungono il grado A (lvl 70-84) o ricevono un premio primario/secondario",
     "px": 60,
-    "target": 1,
+    "target": 2,
     "unit": "requisiti"
   },
   {
@@ -2741,7 +2579,7 @@
     "name": "[Referall] 2 tavoli spaziosi!",
     "description": "2 tuoi Referall raggiungono il grado C (lvl 40-54)",
     "px": 30,
-    "target": 1,
+    "target": 2,
     "unit": "requisiti"
   },
   {
@@ -2750,7 +2588,7 @@
     "name": "[Referall] 3 tavoli qualità dieci!",
     "description": "3 tuoi Referall raggiungono il grado A (lvl 70-84) o ricevono un premio primario/secondario",
     "px": 60,
-    "target": 1,
+    "target": 3,
     "unit": "requisiti"
   },
   {
@@ -2759,7 +2597,7 @@
     "name": "[Referall] 3 tavoli spaziosi!",
     "description": "3 tuoi Referall raggiungono il grado C (lvl 40-54)",
     "px": 30,
-    "target": 1,
+    "target": 3,
     "unit": "requisiti"
   },
   {
@@ -2768,7 +2606,7 @@
     "name": "[Referall] 4 tavoli qualità dieci!",
     "description": "4 tuoi Referall raggiungono il grado A (lvl 70-84) o ricevono un premio primario/secondario",
     "px": 60,
-    "target": 1,
+    "target": 4,
     "unit": "requisiti"
   },
   {
@@ -2777,7 +2615,7 @@
     "name": "[Referall] 4 tavoli spaziosi!",
     "description": "4 tuoi Referall raggiungono il grado C (lvl 40-54)",
     "px": 30,
-    "target": 1,
+    "target": 4,
     "unit": "requisiti"
   },
   {
@@ -2786,7 +2624,7 @@
     "name": "[Referall] 5 tavoli qualità dieci!",
     "description": "5 tuoi Referall raggiungono il grado A (lvl 70-84) o ricevono un premio primario/secondario",
     "px": 60,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -2795,7 +2633,7 @@
     "name": "[Referall] 5 tavoli spaziosi!",
     "description": "5 tuoi Referall raggiungono il grado C (lvl 40-54)",
     "px": 30,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
@@ -2804,7 +2642,7 @@
     "name": "[Referall] 6 tavoli qualità dieci!",
     "description": "6 tuoi Referall raggiungono il grado A (lvl 70-84) o ricevono un premio primario/secondario",
     "px": 60,
-    "target": 1,
+    "target": 6,
     "unit": "requisiti"
   },
   {
@@ -2813,7 +2651,7 @@
     "name": "[Referall] 6 tavoli spaziosi!",
     "description": "6 tuoi Referall raggiungono il grado C (lvl 40-54)",
     "px": 30,
-    "target": 1,
+    "target": 6,
     "unit": "requisiti"
   },
   {
@@ -2822,7 +2660,7 @@
     "name": "[Referall] 7 tavoli qualità dieci!",
     "description": "7 tuoi Referall raggiungono il grado A (lvl 70-84) o ricevono un premio primario/secondario",
     "px": 60,
-    "target": 1,
+    "target": 7,
     "unit": "requisiti"
   },
   {
@@ -2831,7 +2669,7 @@
     "name": "[Referall] 7 tavoli spaziosi!",
     "description": "7 tuoi Referall raggiungono il grado C (lvl 40-54)",
     "px": 30,
-    "target": 1,
+    "target": 7,
     "unit": "requisiti"
   },
   {
@@ -2840,7 +2678,7 @@
     "name": "[Referall] 8 tavoli qualità dieci!",
     "description": "8 tuoi Referall raggiungono il grado A (lvl 70-84) o ricevono un premio primario/secondario",
     "px": 60,
-    "target": 1,
+    "target": 8,
     "unit": "requisiti"
   },
   {
@@ -2849,7 +2687,7 @@
     "name": "[Referall] 8 tavoli spaziosi!",
     "description": "8 tuoi Referall raggiungono il grado C (lvl 40-54)",
     "px": 30,
-    "target": 1,
+    "target": 8,
     "unit": "requisiti"
   },
   {
@@ -2858,7 +2696,7 @@
     "name": "[Referall] 9 tavoli qualità dieci!",
     "description": "9 tuoi Referall raggiungono il grado A (lvl 70-84) o ricevono un premio primario/secondario",
     "px": 60,
-    "target": 1,
+    "target": 9,
     "unit": "requisiti"
   },
   {
@@ -2867,14 +2705,14 @@
     "name": "[Referall] 9 tavoli spaziosi!",
     "description": "9 tuoi Referall raggiungono il grado C (lvl 40-54)",
     "px": 30,
-    "target": 1,
+    "target": 9,
     "unit": "requisiti"
   },
   {
     "id": "off-referall-aggiungi-1-posto-a-tavola",
     "category": "OFF",
     "name": "[Referall] Aggiungi 1 posto a tavola",
-    "description": "Invita un player ad iscriversi al New World.",
+    "description": "Invita un player ad iscriversi al New World. Questo trofeo verrà assegnato quando il neo-iscritto otterrà il trofeo \"Per le guide sei OK\" [L'invito sarà valido solo se avvertito il Capo Guide o un Vice, prima dell'iscrizione]. Questo trofeo sarà rimosso in caso di infrazioni del regolamento e/o di abbandono da parte del Referall.",
     "px": 50,
     "target": 1,
     "unit": "requisiti"
@@ -2883,90 +2721,81 @@
     "id": "off-referall-aggiungi-10-posti-a-tavola",
     "category": "OFF",
     "name": "[Referall] Aggiungi 10 posti a tavola",
-    "description": "Invita 10 player ad iscriversi al New World.",
+    "description": "Invita 10 player ad iscriversi al New World. Questo trofeo verrà assegnato quando i neo-iscritti otterranno il trofeo \"Per le guide sei OK\" [L'invito sarà valido solo se avvertito il Capo Guide o un Vice, prima dell'iscrizione]. Questo trofeo sarà rimosso in caso di infrazioni del regolamento e/o di abbandono da parte dei Referall.",
     "px": 10,
-    "target": 1,
+    "target": 10,
     "unit": "requisiti"
   },
   {
     "id": "off-referall-aggiungi-2-posti-a-tavola",
     "category": "OFF",
     "name": "[Referall] Aggiungi 2 posti a tavola",
-    "description": "Invita 2 player ad iscriversi al New World.",
+    "description": "Invita 2 player ad iscriversi al New World. Questo trofeo verrà assegnato quando i neo-iscritti otterranno il trofeo \"Per le guide sei OK\" [L'invito sarà valido solo se avvertito il Capo Guide o un Vice, prima dell'iscrizione]. Questo trofeo sarà rimosso in caso di infrazioni del regolamento e/o di abbandono da parte dei Referall.",
     "px": 10,
-    "target": 1,
+    "target": 2,
     "unit": "requisiti"
   },
   {
     "id": "off-referall-aggiungi-3-posti-a-tavola",
     "category": "OFF",
     "name": "[Referall] Aggiungi 3 posti a tavola",
-    "description": "Invita 3 player ad iscriversi al New World.",
+    "description": "Invita 3 player ad iscriversi al New World. Questo trofeo verrà assegnato quando i neo-iscritti otterranno il trofeo \"Per le guide sei OK\" [L'invito sarà valido solo se avvertito il Capo Guide o un Vice, prima dell'iscrizione]. Questo trofeo sarà rimosso in caso di infrazioni del regolamento e/o di abbandono da parte dei Referall.",
     "px": 10,
-    "target": 1,
+    "target": 3,
     "unit": "requisiti"
   },
   {
     "id": "off-referall-aggiungi-4-posti-a-tavola",
     "category": "OFF",
     "name": "[Referall] Aggiungi 4 posti a tavola",
-    "description": "Invita 4 player ad iscriversi al New World.",
+    "description": "Invita 4 player ad iscriversi al New World. Questo trofeo verrà assegnato quando i neo-iscritti otterranno il trofeo \"Per le guide sei OK\" [L'invito sarà valido solo se avvertito il Capo Guide o un Vice, prima dell'iscrizione]. Questo trofeo sarà rimosso in caso di infrazioni del regolamento e/o di abbandono da parte dei Referall.",
     "px": 10,
-    "target": 1,
+    "target": 4,
     "unit": "requisiti"
   },
   {
     "id": "off-referall-aggiungi-5-posti-a-tavola",
     "category": "OFF",
     "name": "[Referall] Aggiungi 5 posti a tavola",
-    "description": "Invita 5 player ad iscriversi al New World.",
+    "description": "Invita 5 player ad iscriversi al New World. Questo trofeo verrà assegnato quando i neo-iscritti otterranno il trofeo \"Per le guide sei OK\" [L'invito sarà valido solo se avvertito il Capo Guide o un Vice, prima dell'iscrizione]. Questo trofeo sarà rimosso in caso di infrazioni del regolamento e/o di abbandono da parte dei Referall.",
     "px": 10,
-    "target": 1,
+    "target": 5,
     "unit": "requisiti"
   },
   {
     "id": "off-referall-aggiungi-6-posti-a-tavola",
     "category": "OFF",
     "name": "[Referall] Aggiungi 6 posti a tavola",
-    "description": "Invita 6 player ad iscriversi al New World.",
+    "description": "Invita 6 player ad iscriversi al New World. Questo trofeo verrà assegnato quando i neo-iscritti otterranno il trofeo \"Per le guide sei OK\" [L'invito sarà valido solo se avvertito il Capo Guide o un Vice, prima dell'iscrizione]. Questo trofeo sarà rimosso in caso di infrazioni del regolamento e/o di abbandono da parte dei Referall.",
     "px": 10,
-    "target": 1,
+    "target": 6,
     "unit": "requisiti"
   },
   {
     "id": "off-referall-aggiungi-7-posti-a-tavola",
     "category": "OFF",
     "name": "[Referall] Aggiungi 7 posti a tavola",
-    "description": "Invita 7 player ad iscriversi al New World.",
+    "description": "Invita 7 player ad iscriversi al New World. Questo trofeo verrà assegnato quando i neo-iscritti otterranno il trofeo \"Per le guide sei OK\" [L'invito sarà valido solo se avvertito il Capo Guide o un Vice, prima dell'iscrizione]. Questo trofeo sarà rimosso in caso di infrazioni del regolamento e/o di abbandono da parte dei Referall.",
     "px": 10,
-    "target": 1,
+    "target": 7,
     "unit": "requisiti"
   },
   {
     "id": "off-referall-aggiungi-8-posti-a-tavola",
     "category": "OFF",
     "name": "[Referall] Aggiungi 8 posti a tavola",
-    "description": "Invita 8 player ad iscriversi al New World.",
+    "description": "Invita 8 player ad iscriversi al New World. Questo trofeo verrà assegnato quando i neo-iscritti otterranno il trofeo \"Per le guide sei OK\" [L'invito sarà valido solo se avvertito il Capo Guide o un Vice, prima dell'iscrizione]. Questo trofeo sarà rimosso in caso di infrazioni del regolamento e/o di abbandono da parte dei Referall.",
     "px": 10,
-    "target": 1,
+    "target": 8,
     "unit": "requisiti"
   },
   {
     "id": "off-referall-aggiungi-9-posti-a-tavola",
     "category": "OFF",
     "name": "[Referall] Aggiungi 9 posti a tavola",
-    "description": "Invita 9 player ad iscriversi al New World.",
+    "description": "Invita 9 player ad iscriversi al New World. Questo trofeo verrà assegnato quando i neo-iscritti otterranno il trofeo \"Per le guide sei OK\" [L'invito sarà valido solo se avvertito il Capo Guide o un Vice, prima dell'iscrizione]. Questo trofeo sarà rimosso in caso di infrazioni del regolamento e/o di abbandono da parte dei Referall.",
     "px": 10,
-    "target": 1,
-    "unit": "requisiti"
-  },
-  {
-    "id": "off-referall-e-permesso",
-    "category": "OFF",
-    "name": "[Referall] È permesso?",
-    "description": "Accetta l'invito di un amico ed iscriviti al New World.",
-    "px": 100,
-    "target": 1,
+    "target": 9,
     "unit": "requisiti"
   },
   {
@@ -2975,14 +2804,14 @@
     "name": "[Referall] Mi piace il New World!",
     "description": "Accetta la referenza di un player e raggiungi giocando il grado D (25-39)!",
     "px": 30,
-    "target": 1,
+    "target": 25,
     "unit": "requisiti"
   },
   {
     "id": "off-referall-rayleigh",
     "category": "OFF",
     "name": "[Referall] Rayleigh",
-    "description": "Un tuo Referall riceve sia \"Per le Guide sei OK\" che \"La media è importante\".",
+    "description": "Un tuo Referall riceve sia “Per le Guide sei OK” che “La media è importante”. Non valido per Recuperi PG e Doppi.",
     "px": 100,
     "target": 1,
     "unit": "requisiti"
@@ -3000,7 +2829,7 @@
     "id": "storia-a-marine-like-garp",
     "category": "Storia",
     "name": "A Marine like Garp!",
-    "description": "Raggiungi il grado di \"Viceammiraglio\"",
+    "description": "Raggiungi il grado di “Viceammiraglio\"",
     "px": 100,
     "target": 1,
     "unit": "requisiti"
@@ -3009,7 +2838,7 @@
     "id": "storia-a-marine-like-kizaru",
     "category": "Storia",
     "name": "A Marine like Kizaru!",
-    "description": "Raggiungi il grado di \"Ammiraglio\"",
+    "description": "Raggiungi il grado di “Ammiraglio”",
     "px": 150,
     "target": 1,
     "unit": "requisiti"
@@ -3018,7 +2847,7 @@
     "id": "storia-a-marine-like-koby",
     "category": "Storia",
     "name": "A Marine like Koby!",
-    "description": "Raggiungi il grado di \"Capitano di Vascello\"",
+    "description": "Raggiungi il grado di “Capitano di Vascello”",
     "px": 50,
     "target": 1,
     "unit": "requisiti"
@@ -3027,7 +2856,7 @@
     "id": "storia-affronta-la-flotta-di-un-imperatore",
     "category": "Storia",
     "name": "Affronta la Flotta di un Imperatore!",
-    "description": "Combatti contro la flotta di un imperatore!",
+    "description": "Combatti contro la flotta di un imperatore! [Non valido contro un po' di PNG ma proprio contro l'intera Flotta]",
     "px": 40,
     "target": 1,
     "unit": "requisiti"
@@ -3036,7 +2865,7 @@
     "id": "storia-affronta-una-supernova",
     "category": "Storia",
     "name": "Affronta una supernova",
-    "description": "Combatti e non finire KO contro una Supernova.",
+    "description": "Combatti e non finire KO contro una Supernova. Almeno una iniziativa e una difesa.",
     "px": 15,
     "target": 1,
     "unit": "requisiti"
@@ -3045,7 +2874,7 @@
     "id": "storia-che-mira",
     "category": "Storia",
     "name": "Che Mira!",
-    "description": "Hai mandato KO un avversario da 100 mt di distanza in quest di rilievo",
+    "description": "Hai mandato KO un avversario da 100 mt di distanza in quest di rilievo (a discrezione del Capo Fati o dello Staff)",
     "px": 20,
     "target": 1,
     "unit": "requisiti"
@@ -3072,7 +2901,7 @@
     "id": "storia-giu-nei-mari",
     "category": "Storia",
     "name": "Giù nei Mari",
-    "description": "Hai raggiunto l'Isola degli Uomini pesce (solo tramite quest).",
+    "description": "Hai raggiunto l’Isola degli Uomini pesce (solo tramite quest).",
     "px": 20,
     "target": 1,
     "unit": "requisiti"
@@ -3135,7 +2964,7 @@
     "id": "storia-sconfiggi-un-ammiraglio",
     "category": "Storia",
     "name": "Sconfiggi un Ammiraglio!",
-    "description": "Combatti da solo contro un Ammiraglio mettendolo ko senza andare ko a tua volta",
+    "description": "Combatti da solo contro un Ammiraglio mettendolo ko senza andare ko a tua volta [Su valutazione dello Staff e del Capo Fati]",
     "px": 100,
     "target": 1,
     "unit": "requisiti"
@@ -3144,7 +2973,7 @@
     "id": "storia-sconfiggi-un-imperatore",
     "category": "Storia",
     "name": "Sconfiggi un Imperatore!",
-    "description": "Combatti da solo contro un Imperatore Pirata e mandalo KO, senza andare KO",
+    "description": "Combatti da solo contro un Imperatore Pirata e mandalo KO, senza andare KO nella quest a tua volta! [Su valutazione dello Staff e Capo Fati]",
     "px": 100,
     "target": 1,
     "unit": "requisiti"
@@ -3153,7 +2982,7 @@
     "id": "storia-shangri-la",
     "category": "Storia",
     "name": "Shangri-La",
-    "description": "Scopri uno scenario unico",
+    "description": "Scopri uno scenario unico (non valido per quello comunicato all'utenza a ottobre 2025).",
     "px": 25,
     "target": 1,
     "unit": "requisiti"
@@ -3189,7 +3018,7 @@
     "id": "storia-the-boss-a",
     "category": "Storia",
     "name": "The Boss A",
-    "description": "Sconfiggi un png livello A in 1 vs 1",
+    "description": "Sconfiggi un png livello A in 1 vs 1 ( Valido solo per quest presenti ancora nel Log Quest )",
     "px": 20,
     "target": 1,
     "unit": "requisiti"
@@ -3198,7 +3027,7 @@
     "id": "storia-the-boss-s",
     "category": "Storia",
     "name": "The Boss S",
-    "description": "Sconfiggi un png livello S in 1 vs 1",
+    "description": "Sconfiggi un png livello S in 1 vs 1 ( Valido solo per quest presenti ancora nel Log Quest )",
     "px": 25,
     "target": 1,
     "unit": "requisiti"
@@ -3207,7 +3036,7 @@
     "id": "storia-the-boss-z",
     "category": "Storia",
     "name": "The Boss Z",
-    "description": "Sconfiggi un png livello Z in 1 vs 1",
+    "description": "Sconfiggi un png livello Z in 1 vs 1 ( Valido solo per quest presenti ancora nel Log Quest )",
     "px": 30,
     "target": 1,
     "unit": "requisiti"
