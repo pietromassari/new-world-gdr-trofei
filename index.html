@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#24160f">
+  <title>New World GDR — Tracker Trofei</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">NEW WORLD GDR</p>
+        <h1>☠ Registro Trofei</h1>
+        <p class="subtitle">Segna, monitora e conserva le prove delle tue imprese.</p>
+      </div>
+      <div class="stamp" aria-label="Taglia in crescita">TAGLIA<br>IN CRESCITA</div>
+    </header>
+
+    <section class="stats" aria-label="Riepilogo progresso">
+      <article class="stat"><span>Completati</span><strong id="completed">0 / 0</strong></article>
+      <article class="stat"><span>PX ottenuti</span><strong id="px">0</strong></article>
+      <article class="stat"><span>In progress</span><strong id="inprogress">0</strong></article>
+      <article class="stat"><span>Categoria attiva</span><strong id="category-stat">Tutte</strong></article>
+    </section>
+
+    <section class="panel">
+      <div class="tools">
+        <label class="sr-only" for="search">Cerca trofei</label>
+        <input id="search" type="search" placeholder="Cerca un trofeo o un requisito…">
+        <label class="sr-only" for="category-filter">Categoria</label>
+        <select id="category-filter">
+          <option value="all">Tutte le categorie</option>
+          <option value="ON">ON</option>
+          <option value="OFF">OFF</option>
+          <option value="Storia">Storia</option>
+        </select>
+        <label class="sr-only" for="status-filter">Stato</label>
+        <select id="status-filter">
+          <option value="all">Tutti gli stati</option>
+          <option value="Non iniziato">Non iniziato</option>
+          <option value="In progress">In progress</option>
+          <option value="Completato">Completato</option>
+        </select>
+        <button class="button secondary" id="export-button" type="button">Esporta</button>
+        <button class="button secondary" id="import-button" type="button">Importa</button>
+        <input id="import-file" type="file" accept="application/json" hidden>
+      </div>
+
+      <div class="progress-wrap">
+        <div class="progress-label"><span>Avanzamento complessivo</span><span id="percent">0%</span></div>
+        <div class="bar" aria-label="Avanzamento"><div id="bar-fill"></div></div>
+      </div>
+
+      <div id="trophy-list" class="trophy-list" aria-live="polite"></div>
+    </section>
+
+    <p class="notice">I progressi sono salvati in questo browser. Esporta periodicamente un backup JSON.</p>
+  </main>
+
+  <template id="trophy-template">
+    <article class="trophy-card">
+      <span class="badge trophy-category"></span>
+      <div class="trophy-main">
+        <h2 class="trophy-name"></h2>
+        <p class="trophy-description"></p>
+        <p class="meta"></p>
+      </div>
+      <button class="button detail-button" type="button">Dettaglio</button>
+      <form class="detail-form" hidden>
+        <label>Stato
+          <select class="status-input">
+            <option>Non iniziato</option>
+            <option>In progress</option>
+            <option>Completato</option>
+          </select>
+        </label>
+        <label class="progress-field">Progresso
+          <span class="stepper">
+            <button class="button secondary decrease" type="button">−1</button>
+            <input class="value-input" type="number" min="0" value="0">
+            <button class="button secondary increase" type="button">+1</button>
+          </span>
+        </label>
+        <label class="wide">Link prova / screenshot
+          <input class="proof-input" type="url" placeholder="https://…">
+        </label>
+        <label class="wide">Note
+          <textarea class="note-input" rows="3" placeholder="Annotazioni personali…"></textarea>
+        </label>
+      </form>
+    </article>
+  </template>
+
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
