@@ -3,161 +3,303 @@ const state = {
   progress: loadProgress()
 };
 
+const $ = (selector) => document.querySelector(selector);
+
 const elements = {
-  completed: document.querySelector('#completed'),
-  px: document.querySelector('#px'),
-  inProgress: document.querySelector('#inprogress'),
-  categoryStat: document.querySelector('#category-stat'),
-  percent: document.querySelector('#percent'),
-  bar: document.querySelector('#bar-fill'),
-  list: document.querySelector('#trophy-list'),
-  template: document.querySelector('#trophy-template'),
-  search: document.querySelector('#search'),
-  category: document.querySelector('#category-filter'),
-  status: document.querySelector('#status-filter'),
-  exportButton: document.querySelector('#export-button'),
-  importButton: document.querySelector('#import-button'),
-  importFile: document.querySelector('#import-file')
+  list: $('#trophy-list'),
+  template: $('#trophy-template'),
+  search: $('#search'),
+  category: $('#category-filter'),
+  status: $('#status-filter'),
+  registrationDate: $('#registration-date'),
+  validatedCount: $('#validated-count'),
+  confirmedPx: $('#confirmed-px'),
+  inProgressCount: $('#progress-count'),
+  pendingCount: $('#pending-count'),
+  percentage: $('#percentage'),
+  barFill: $('#bar-fill'),
+  exportButton: $('#export-button'),
+  importButton: $('#import-button'),
+  importFile: $('#import-file')
 };
 
-function trophyState(trophy) {
-  return state.progress.trophies[trophy.id] || {
+const deadlineRules = {
+  'off-benvenuto-tra-noi-1': { months: 6 },
+  'off-benvenuto-tra-noi-2': { months: 12 },
+  'off-giovane-promessa-pro': { months: 12 },
+  'off-giovane-promessa-top': { months: 12 },
+  'off-la-media-e-importante': { months: 3 },
+  'off-partenza-col-botto-1': { days: 15 },
+  'off-partenza-col-botto-2': { days: 45 },
+  'off-piacere-mio': { days: 30 },
+  'off-prime-azioni': { days: 30 }
+};
+
+function normalize(text) {
+  return String(text || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase();
+}
+
+function defaultTrophyState(trophy) {
+  return {
     status: 'Non iniziato',
     value: 0,
-    note: '',
-    proof: ''
+    validated: false,
+    prerequisites: trophy.prerequisites || '',
+    proof: '',
+    note: ''
   };
 }
 
-function updateTrophy(id, patch) {
-  const trophy = state.catalog.find((item) => item.id === id);
-  const current = trophyState(trophy);
-  state.progress.trophies[id] = { ...current, ...patch };
+function getTrophyState(trophy) {
+  return {
+    ...defaultTrophyState(trophy),
+    ...(state.progress.trophies[trophy.id] || {})
+  };
+}
+
+function hasCounter(trophy) {
+  return Number(trophy.target) > 1;
+}
+
+function saveTrophy(trophy, changes) {
+  const current = getTrophyState(trophy);
+  const next = { ...current, ...changes };
+
+  if (hasCounter(trophy) && !next.validated) {
+    if (next.value >= Number(trophy.target)) {
+      next.status = 'Completato';
+    } else if (next.value > 0) {
+      next.status = 'In progress';
+    } else {
+      next.status = 'Non iniziato';
+    }
+  }
+
+  if (next.validated) {
+    next.status = 'Convalidato';
+  } else if (next.status === 'Convalidato') {
+    next.status = 'Completato';
+  }
+
+  if (!['Completato', 'Convalidato'].includes(next.status)) {
+    next.validated = false;
+  }
+
+  state.progress.trophies[trophy.id] = next;
   saveProgress(state.progress);
   render();
 }
 
-function visibleTrophies() {
-  const search = elements.search.value.trim().toLowerCase();
+function getDeadline(trophy) {
+  const rule = deadlineRules[trophy.id];
+  if (!rule) return null;
+
+  if (!state.progress.registrationDate) {
+    return {
+      className: 'deadline-soon',
+      message: 'Imposta la data di iscrizione per calcolare la scadenza'
+    };
+  }
+
+  const deadline = addDate(
+    state.progress.registrationDate,
+    rule.days || 0,
+    rule.months || 0
+  );
+
+  const remainingDays = Math.ceil((deadline - new Date()) / 86400000);
+
+  if (remainingDays < 0) {
+    return {
+      className: 'deadline-expired',
+      message: `Scaduto da ${Math.abs(remainingDays)} giorni`
+    };
+  }
+
+  if (remainingDays === 0) {
+    return { className: 'deadline-expired', message: 'Scade oggi' };
+  }
+
+  return {
+    className: remainingDays <= 7 ? 'deadline-soon' : 'deadline-ok',
+    message: `Scade tra ${remainingDays} giorni · ${deadline.toLocaleDateString('it-IT')}`
+  };
+}
+
+function getVisibleTrophies() {
+  const terms = normalize(elements.search.value).split(/\s+/).filter(Boolean);
   const category = elements.category.value;
   const status = elements.status.value;
 
   return state.catalog.filter((trophy) => {
-    const current = trophyState(trophy);
-    const content = `${trophy.name} ${trophy.description} ${trophy.category}`.toLowerCase();
-    return (category === 'all' || trophy.category === category)
-      && (status === 'all' || current.status === status)
-      && content.includes(search);
+    const current = getTrophyState(trophy);
+    const currentStatus = current.validated ? 'Convalidato' : current.status;
+    const searchable = normalize([
+      trophy.name,
+      trophy.description,
+      trophy.prerequisites,
+      current.prerequisites,
+      trophy.category
+    ].join(' '));
+
+    const categoryMatches = category === 'all' || trophy.category === category;
+    const statusMatches = status === 'all' || currentStatus === status;
+    const searchMatches = terms.every((term) => searchable.includes(term));
+
+    return categoryMatches && statusMatches && searchMatches;
   });
 }
 
 function renderStats() {
-  const completed = state.catalog.filter((trophy) => trophyState(trophy).status === 'Completato');
-  const inProgress = state.catalog.filter((trophy) => trophyState(trophy).status === 'In progress');
-  const px = completed.reduce((total, trophy) => total + trophy.px, 0);
-  const percentage = state.catalog.length ? Math.round((completed.length / state.catalog.length) * 100) : 0;
+  const states = state.catalog.map(getTrophyState);
+  const validated = states.filter((item) => item.validated).length;
+  const completed = states.filter((item) => item.status === 'Completato' && !item.validated).length;
+  const inProgress = states.filter((item) => item.status === 'In progress').length;
+  const confirmedPx = state.catalog
+    .filter((trophy) => getTrophyState(trophy).validated)
+    .reduce((total, trophy) => total + Number(trophy.px || 0), 0);
+  const percent = state.catalog.length
+    ? Math.round((validated / state.catalog.length) * 100)
+    : 0;
 
-  elements.completed.textContent = `${completed.length} / ${state.catalog.length}`;
-  elements.px.textContent = px;
-  elements.inProgress.textContent = inProgress.length;
-  elements.categoryStat.textContent = elements.category.value === 'all' ? 'Tutte' : elements.category.value;
-  elements.percent.textContent = `${percentage}%`;
-  elements.bar.style.width = `${percentage}%`;
+  elements.validatedCount.textContent = `${validated} / ${state.catalog.length}`;
+  elements.confirmedPx.textContent = confirmedPx;
+  elements.inProgressCount.textContent = inProgress;
+  elements.pendingCount.textContent = completed;
+  elements.percentage.textContent = `${percent}%`;
+  elements.barFill.style.width = `${percent}%`;
 }
 
-function makeCard(trophy) {
-  const current = trophyState(trophy);
+function renderCard(trophy) {
+  const current = getTrophyState(trophy);
+  const counterEnabled = hasCounter(trophy);
+  const statusText = current.validated ? 'Convalidato' : current.status;
   const fragment = elements.template.content.cloneNode(true);
+
   const card = fragment.querySelector('.trophy-card');
   const category = fragment.querySelector('.trophy-category');
   const name = fragment.querySelector('.trophy-name');
   const description = fragment.querySelector('.trophy-description');
+  const prerequisiteText = fragment.querySelector('.trophy-prerequisites');
+  const deadline = fragment.querySelector('.trophy-deadline');
   const meta = fragment.querySelector('.meta');
   const detailButton = fragment.querySelector('.detail-button');
   const form = fragment.querySelector('.detail-form');
-  const status = fragment.querySelector('.status-input');
-  const value = fragment.querySelector('.value-input');
-  const proof = fragment.querySelector('.proof-input');
-  const note = fragment.querySelector('.note-input');
+  const statusInput = fragment.querySelector('.status-input');
+  const progressField = fragment.querySelector('.progress-field');
+  const valueInput = fragment.querySelector('.value-input');
+  const validatedInput = fragment.querySelector('.validated-input');
+  const prerequisitesInput = fragment.querySelector('.prerequisites-input');
+  const proofInput = fragment.querySelector('.proof-input');
+  const noteInput = fragment.querySelector('.note-input');
 
   category.textContent = trophy.category;
   name.textContent = trophy.name;
   description.textContent = trophy.description;
-  meta.innerHTML = `Premio: <b>${trophy.px} PX</b> · Stato: ${current.status} · Progresso: ${current.value} / ${trophy.target} ${trophy.unit}`;
-  status.value = current.status;
-  value.value = current.value;
-  proof.value = current.proof;
-  note.value = current.note;
+  meta.innerHTML = `Premio: <b>${trophy.px} PX</b> · Stato: ${statusText}${counterEnabled ? ` · Progresso: ${current.value} / ${trophy.target} ${trophy.unit}` : ''}`;
 
-  card.classList.toggle('is-complete', current.status === 'Completato');
-  card.classList.toggle('is-progress', current.status === 'In progress');
+  if (current.prerequisites) {
+    prerequisiteText.hidden = false;
+    prerequisiteText.textContent = `Prerequisiti: ${current.prerequisites}`;
+  }
+
+  const deadlineInfo = getDeadline(trophy);
+  if (deadlineInfo) {
+    deadline.hidden = false;
+    deadline.className = `trophy-deadline ${deadlineInfo.className}`;
+    deadline.textContent = deadlineInfo.message;
+  }
+
+  statusInput.value = current.status === 'Convalidato' ? 'Completato' : current.status;
+  valueInput.value = current.value;
+  validatedInput.checked = current.validated;
+  validatedInput.disabled = current.status !== 'Completato' && !current.validated;
+  prerequisitesInput.value = current.prerequisites;
+  proofInput.value = current.proof;
+  noteInput.value = current.note;
+
+  if (!counterEnabled) progressField.hidden = true;
+
+  card.classList.toggle('is-progress', statusText === 'In progress');
+  card.classList.toggle('is-complete', statusText === 'Completato');
+  card.classList.toggle('is-validated', statusText === 'Convalidato');
 
   detailButton.addEventListener('click', () => {
-    const hidden = form.hasAttribute('hidden');
-    form.toggleAttribute('hidden', !hidden);
-    detailButton.textContent = hidden ? 'Chiudi' : 'Dettaglio';
+    const isHidden = form.hasAttribute('hidden');
+    form.toggleAttribute('hidden', !isHidden);
+    detailButton.textContent = isHidden ? 'Chiudi' : 'Dettaglio';
   });
 
-  status.addEventListener('change', () => updateTrophy(trophy.id, { status: status.value }));
-  value.addEventListener('change', () => updateTrophy(trophy.id, { value: Math.max(0, Number(value.value) || 0) }));
-  proof.addEventListener('change', () => updateTrophy(trophy.id, { proof: proof.value.trim() }));
-  note.addEventListener('change', () => updateTrophy(trophy.id, { note: note.value }));
+  statusInput.addEventListener('change', () => saveTrophy(trophy, { status: statusInput.value }));
+  valueInput.addEventListener('change', () => saveTrophy(trophy, { value: Math.max(0, Number(valueInput.value) || 0) }));
+  validatedInput.addEventListener('change', () => saveTrophy(trophy, { validated: validatedInput.checked }));
+  prerequisitesInput.addEventListener('change', () => saveTrophy(trophy, { prerequisites: prerequisitesInput.value.trim() }));
+  proofInput.addEventListener('change', () => saveTrophy(trophy, { proof: proofInput.value.trim() }));
+  noteInput.addEventListener('change', () => saveTrophy(trophy, { note: noteInput.value }));
 
   fragment.querySelector('.decrease').addEventListener('click', () => {
-    updateTrophy(trophy.id, { value: Math.max(0, current.value - 1), status: current.status === 'Non iniziato' ? 'In progress' : current.status });
+    saveTrophy(trophy, { value: Math.max(0, current.value - 1) });
   });
 
   fragment.querySelector('.increase').addEventListener('click', () => {
-    updateTrophy(trophy.id, { value: current.value + 1, status: current.status === 'Non iniziato' ? 'In progress' : current.status });
+    saveTrophy(trophy, { value: current.value + 1 });
   });
 
   return fragment;
 }
 
 function render() {
-  const trophies = visibleTrophies();
+  const trophies = getVisibleTrophies();
   elements.list.replaceChildren();
 
   if (!trophies.length) {
-    elements.list.innerHTML = '<div class="empty">Nessun trofeo corrisponde alla ricerca o ai filtri.</div>';
+    elements.list.innerHTML = '<p class="empty">Nessun trofeo corrisponde a ricerca e filtri.</p>';
   } else {
-    trophies.forEach((trophy) => elements.list.append(makeCard(trophy)));
+    trophies.forEach((trophy) => elements.list.append(renderCard(trophy)));
   }
 
   renderStats();
-}
-
-function bindEvents() {
-  [elements.search, elements.category, elements.status].forEach((input) => {
-    input.addEventListener(input === elements.search ? 'input' : 'change', render);
-  });
-
-  elements.exportButton.addEventListener('click', () => exportProgress(state.progress));
-  elements.importButton.addEventListener('click', () => elements.importFile.click());
-  elements.importFile.addEventListener('change', async () => {
-    const [file] = elements.importFile.files;
-    if (!file) return;
-    try {
-      state.progress = await importProgress(file);
-      saveProgress(state.progress);
-      render();
-    } catch {
-      alert('Il file selezionato non è un backup valido del tracker.');
-    } finally {
-      elements.importFile.value = '';
-    }
-  });
 }
 
 async function start() {
   try {
     const response = await fetch('data/trofei.json');
     if (!response.ok) throw new Error('Catalogo non disponibile');
+
     state.catalog = await response.json();
-    bindEvents();
+    elements.registrationDate.value = state.progress.registrationDate || '';
+
+    elements.search.addEventListener('input', render);
+    elements.category.addEventListener('change', render);
+    elements.status.addEventListener('change', render);
+    elements.registrationDate.addEventListener('change', () => {
+      state.progress.registrationDate = elements.registrationDate.value;
+      saveProgress(state.progress);
+      render();
+    });
+    elements.exportButton.addEventListener('click', () => exportProgress(state.progress));
+    elements.importButton.addEventListener('click', () => elements.importFile.click());
+    elements.importFile.addEventListener('change', async () => {
+      const [file] = elements.importFile.files;
+      if (!file) return;
+      try {
+        state.progress = await importProgress(file);
+        elements.registrationDate.value = state.progress.registrationDate || '';
+        saveProgress(state.progress);
+        render();
+      } catch {
+        alert('Backup JSON non valido.');
+      } finally {
+        elements.importFile.value = '';
+      }
+    });
+
     render();
   } catch {
-    elements.list.innerHTML = '<div class="empty">Impossibile caricare il catalogo. Avvia il progetto con un server statico o pubblicalo su GitHub Pages.</div>';
+    elements.list.innerHTML = '<p class="empty">Impossibile caricare <code>data/trofei.json</code>. Controlla che nome e percorso siano esatti.</p>';
   }
 }
 
