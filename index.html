@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#24160f">
-  <title>New World GDR — Tracker Trofei</title>
+  <title>New World GDR — Registro Trofei</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,83 +13,134 @@
       <div>
         <p class="eyebrow">NEW WORLD GDR</p>
         <h1>☠ Registro Trofei</h1>
-        <p class="subtitle">Segna, monitora e conserva le prove delle tue imprese.</p>
+        <p class="subtitle">Traccia obiettivi, prove e convalide dello Staff.</p>
       </div>
       <div class="stamp" aria-label="Taglia in crescita">TAGLIA<br>IN CRESCITA</div>
     </header>
 
-    <section class="stats" aria-label="Riepilogo progresso">
-      <article class="stat"><span>Completati</span><strong id="completed">0 / 0</strong></article>
-      <article class="stat"><span>PX ottenuti</span><strong id="px">0</strong></article>
-      <article class="stat"><span>In progress</span><strong id="inprogress">0</strong></article>
-      <article class="stat"><span>Categoria attiva</span><strong id="category-stat">Tutte</strong></article>
+    <section class="stats" aria-label="Riepilogo dei trofei">
+      <article class="stat">
+        <span>Convalidati</span>
+        <strong id="validated-count">0 / 0</strong>
+      </article>
+      <article class="stat">
+        <span>PX confermati</span>
+        <strong id="confirmed-px">0</strong>
+      </article>
+      <article class="stat">
+        <span>In progress</span>
+        <strong id="progress-count">0</strong>
+      </article>
+      <article class="stat">
+        <span>Da convalidare</span>
+        <strong id="pending-count">0</strong>
+      </article>
     </section>
 
     <section class="panel">
       <div class="tools">
         <label class="sr-only" for="search">Cerca trofei</label>
-        <input id="search" type="search" placeholder="Cerca un trofeo o un requisito…">
-        <label class="sr-only" for="category-filter">Categoria</label>
+        <input id="search" type="search" placeholder="Cerca nome, requisito o prerequisito…">
+
+        <label class="sr-only" for="category-filter">Filtra per categoria</label>
         <select id="category-filter">
           <option value="all">Tutte le categorie</option>
-          <option value="ON">ON</option>
-          <option value="OFF">OFF</option>
-          <option value="Storia">Storia</option>
+          <option value="ON">Trofei ON</option>
+          <option value="OFF">Trofei OFF</option>
+          <option value="Storia">Trofei Storia</option>
         </select>
-        <label class="sr-only" for="status-filter">Stato</label>
+
+        <label class="sr-only" for="status-filter">Filtra per stato</label>
         <select id="status-filter">
           <option value="all">Tutti gli stati</option>
           <option value="Non iniziato">Non iniziato</option>
           <option value="In progress">In progress</option>
-          <option value="Completato">Completato</option>
+          <option value="Completato">Completato — da convalidare</option>
+          <option value="Convalidato">Convalidato</option>
         </select>
-        <button class="button secondary" id="export-button" type="button">Esporta</button>
-        <button class="button secondary" id="import-button" type="button">Importa</button>
+
+        <button id="export-button" class="button secondary" type="button">Esporta</button>
+        <button id="import-button" class="button secondary" type="button">Importa</button>
         <input id="import-file" type="file" accept="application/json" hidden>
       </div>
 
+      <label class="registration-field" for="registration-date">
+        Data di iscrizione
+        <small>Usata per calcolare le scadenze dei trofei a tempo.</small>
+        <input id="registration-date" type="date">
+      </label>
+
       <div class="progress-wrap">
-        <div class="progress-label"><span>Avanzamento complessivo</span><span id="percent">0%</span></div>
-        <div class="bar" aria-label="Avanzamento"><div id="bar-fill"></div></div>
+        <div class="progress-label">
+          <span>Avanzamento convalidato</span>
+          <span id="percentage">0%</span>
+        </div>
+        <div class="bar" aria-label="Percentuale trofei convalidati">
+          <div id="bar-fill"></div>
+        </div>
       </div>
 
       <div id="trophy-list" class="trophy-list" aria-live="polite"></div>
     </section>
 
-    <p class="notice">I progressi sono salvati in questo browser. Esporta periodicamente un backup JSON.</p>
+    <p class="notice">
+      I progressi sono salvati in questo browser. Usa Esporta per creare un backup prima di cambiare browser o dispositivo.
+    </p>
   </main>
 
   <template id="trophy-template">
     <article class="trophy-card">
       <span class="badge trophy-category"></span>
+
       <div class="trophy-main">
         <h2 class="trophy-name"></h2>
         <p class="trophy-description"></p>
+        <p class="trophy-prerequisites" hidden></p>
+        <p class="trophy-deadline" hidden></p>
         <p class="meta"></p>
       </div>
+
       <button class="button detail-button" type="button">Dettaglio</button>
-      <form class="detail-form" hidden>
-        <label>Stato
+
+      <div class="detail-form" hidden>
+        <label>
+          Stato
           <select class="status-input">
             <option>Non iniziato</option>
             <option>In progress</option>
             <option>Completato</option>
           </select>
         </label>
-        <label class="progress-field">Progresso
+
+        <label class="progress-field">
+          Progresso
           <span class="stepper">
             <button class="button secondary decrease" type="button">−1</button>
             <input class="value-input" type="number" min="0" value="0">
             <button class="button secondary increase" type="button">+1</button>
           </span>
         </label>
-        <label class="wide">Link prova / screenshot
+
+        <label class="wide validated-field">
+          <input class="validated-input" type="checkbox">
+          Convalidato dallo Staff
+        </label>
+
+        <label class="wide">
+          Prerequisiti
+          <textarea class="prerequisites-input" rows="2" placeholder="Lascia vuoto se non sono richiesti trofei o condizioni precedenti…"></textarea>
+        </label>
+
+        <label class="wide">
+          Link prova / screenshot
           <input class="proof-input" type="url" placeholder="https://…">
         </label>
-        <label class="wide">Note
-          <textarea class="note-input" rows="3" placeholder="Annotazioni personali…"></textarea>
+
+        <label class="wide">
+          Note
+          <textarea class="note-input" rows="3" placeholder="Annotazioni personali, link Log Quest, nomi dei PG coinvolti…"></textarea>
         </label>
-      </form>
+      </div>
     </article>
   </template>
 
