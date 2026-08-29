@@ -5,9 +5,9 @@
     "name": "3d2y 1 – Inizia l'allenamento!",
     "description": "Gioca per 3 mesi, attivamente, con lo stesso personaggio! (E' possibile richiedere un trofeo \"3d2y\" alla volta.) [Trofeo premio assegnabile su valutazione dello Staff]",
     "px": 100,
-    "target": 3,
-    "unit": "mesi",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-3d2y-2-le-prime-fasi",
@@ -15,9 +15,9 @@
     "name": "3d2y 2 – Le prime fasi!",
     "description": "Continua a giocare attivamente per altre 2 settimane con lo stesso personaggio, richiede \"3d2y - Inizio dell'allenamento\" e 30 azioni.",
     "px": 100,
-    "target": 30,
-    "unit": "azioni",
-    "prerequisites": "3d2y 1 – Inizia l'allenamento!; 30 azioni."
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-3d2y-3-chi-la-dura-la-vince",
@@ -25,9 +25,9 @@
     "name": "3d2y 3 – Chi la dura la vince!",
     "description": "Continua a giocare attivamente per altre 2 settimane con lo stesso personaggio, richiede \"Le prime fasi!\" e 30 azioni.",
     "px": 100,
-    "target": 30,
-    "unit": "azioni",
-    "prerequisites": "3d2y 2 – Le prime fasi!; 30 azioni."
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-3d2y-4-alla-ricerca-della-perfezione",
@@ -35,9 +35,9 @@
     "name": "3d2y 4 – Alla ricerca della perfezione!",
     "description": "Continua a giocare attivamente per altre 2 settimane con lo stesso personaggio, richiede \"Chi l'ha dura la vince!\" e 30 azioni.",
     "px": 100,
-    "target": 30,
-    "unit": "azioni",
-    "prerequisites": "3d2y 3 – Chi la dura la vince!; 30 azioni."
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-3d2y-5-fine-addestramento",
@@ -45,9 +45,9 @@
     "name": "3d2y 5 – Fine addestramento!",
     "description": "Continua a giocare attivamente, per altre 2 settimane, con lo stesso personaggio, richiede \"Alla ricerca della perfezione!\" e 30 azioni.",
     "px": 100,
-    "target": 30,
-    "unit": "azioni",
-    "prerequisites": "3d2y 4 – Alla ricerca della perfezione!; 30 azioni."
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-a-mano-armata",
@@ -55,9 +55,9 @@
     "name": "A mano Armata",
     "description": "Possiedi almeno 5 differenti armi dal livello minimo 7 (armi da Taglio, Botta, Fuoco o Lancio; no Dial etc)",
     "px": 10,
-    "target": 5,
-    "unit": "armi",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-a-ritmo-di-musica",
@@ -67,7 +67,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-ahia-fa-ancora-male",
@@ -75,9 +75,9 @@
     "name": "Ahià! Fa ancora male!",
     "description": "Vieni curato per almeno 5 volte da un PG (non valido se ti curi da solo) (occorre stamp singole giocate)",
     "px": 10,
-    "target": 5,
-    "unit": "cure",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-ahia-che-male",
@@ -87,7 +87,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-ai-fornelli",
@@ -95,9 +95,9 @@
     "name": "Ai Fornelli!",
     "description": "Sfama 5 diversi PG (occorre stamp singole giocate)",
     "px": 10,
-    "target": 5,
-    "unit": "PG",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-al-top",
@@ -107,7 +107,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-alive",
@@ -117,7 +117,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-all-arrembaggio",
@@ -127,7 +127,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-amico-di-tutti",
@@ -137,7 +137,8 @@
     "px": 100,
     "target": 20,
     "unit": "PG",
-    "prerequisites": ""
+    "source": "unique_players_week",
+    "windowDays": 7
   },
   {
     "id": "on-anto-fa-caldo",
@@ -147,7 +148,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-anto-fa-freddo",
@@ -157,7 +158,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-approvato",
@@ -167,7 +168,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-aprite-il-sipario",
@@ -177,7 +178,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-basta-drogarsi",
@@ -187,7 +188,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-battaglia-navale",
@@ -197,7 +198,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-bell-arma",
@@ -205,9 +206,9 @@
     "name": "Bell'arma!",
     "description": "Riconosci 3 armi e la loro fattura, qualità almeno 7 (occorre stamp singole giocate)",
     "px": 10,
-    "target": 3,
-    "unit": "armi",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-boom",
@@ -217,7 +218,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-buona-la-frutta",
@@ -227,7 +228,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-businessman",
@@ -235,9 +236,9 @@
     "name": "Businessman",
     "description": "Possiedi come primo proprietario 10 Edifici o attività commerciali (minimo qualità 7).",
     "px": 15,
-    "target": 10,
-    "unit": "edifici/attività",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-capita-a-tutti",
@@ -247,7 +248,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-casa-dolce-casa",
@@ -257,7 +258,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-che-fontana-grossa",
@@ -267,7 +268,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-che-teschio-enorme",
@@ -277,7 +278,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-chi-non-sa-insegna",
@@ -287,7 +288,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-ci-sono-gia-stato-qui",
@@ -295,9 +296,9 @@
     "name": "Ci sono già stato qui?",
     "description": "Esplora almeno 10 isole di trama. Non valido se non presenti nella mappa ufficiale.",
     "px": 25,
-    "target": 10,
-    "unit": "isole",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-come-funziona",
@@ -307,7 +308,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-costruiamo-la-storia",
@@ -315,9 +316,9 @@
     "name": "Costruiamo la Storia!",
     "description": "Partecipa ed esci vittorioso (senza finire ko) da una quest (MQ e ME esclusi, almeno 3 persone)",
     "px": 10,
-    "target": 3,
-    "unit": "PE",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-critico-d-arte",
@@ -325,9 +326,9 @@
     "name": "Critico d'Arte",
     "description": "Sfrutta le tue conoscenze artistiche per realizzare 5 opere differenti (dipinti, disegni, sculture o anche danza) (occorre stamp singole giocate)",
     "px": 12,
-    "target": 5,
-    "unit": "opere",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-cuore-rosso",
@@ -337,7 +338,7 @@
     "px": 40,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-datemi-un-martello",
@@ -345,9 +346,9 @@
     "name": "Datemi un Martello!",
     "description": "Apprendi Carpenteria a livello 10",
     "px": 20,
-    "target": 10,
-    "unit": "livelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-datore-d-lavoro",
@@ -357,7 +358,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-dente-per-dente",
@@ -365,9 +366,9 @@
     "name": "Dente per Dente.",
     "description": "Pareggia 5 volte in duello PvP con doppio KO.",
     "px": 25,
-    "target": 5,
-    "unit": "duelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-dentro-il-teschio",
@@ -377,7 +378,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-diplomatico",
@@ -387,7 +388,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-dominiamo-la-storia",
@@ -395,9 +396,9 @@
     "name": "Dominiamo la Storia!",
     "description": "Partecipa ed esci vittorioso (senza finire ko) da almeno cinque quest (MQ e ME esclusi, almeno 3 persone)",
     "px": 20,
-    "target": 3,
-    "unit": "PE",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-don-t-stop-the-party",
@@ -405,9 +406,9 @@
     "name": "Don't stop the party",
     "description": "Fai una giocata di almeno 10 turni (occorrono stamp delle giocate; quest non valide).",
     "px": 20,
-    "target": 10,
-    "unit": "turni",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-dov-e-la-torta",
@@ -417,7 +418,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-e-una-nave-e-un-isola",
@@ -427,7 +428,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-easy-mode",
@@ -437,7 +438,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-ehi-lovoon",
@@ -447,7 +448,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-enciclopedia-1",
@@ -455,9 +456,9 @@
     "name": "Enciclopedia 1",
     "description": "Sviluppa una conoscenza portandola sino al livello 10",
     "px": 20,
-    "target": 10,
-    "unit": "livelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-enciclopedia-2",
@@ -465,9 +466,9 @@
     "name": "Enciclopedia 2",
     "description": "Sviluppa due conoscenze portandole entrambe sino a livello 10",
     "px": 25,
-    "target": 10,
-    "unit": "livelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-era-solo-una-mq",
@@ -477,7 +478,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-esploratore-doc",
@@ -485,9 +486,9 @@
     "name": "Esploratore DOC",
     "description": "Esplora almeno 5 isole di trama. Non valido se non presenti nella mappa ufficiale.",
     "px": 20,
-    "target": 5,
-    "unit": "isole",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-eventi-casuali",
@@ -495,9 +496,9 @@
     "name": "Eventi casuali",
     "description": "Partecipa a 3 MQ (non valido nel caso si esca prima di fine quest)",
     "px": 10,
-    "target": 3,
-    "unit": "MQ",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-everybody-scream",
@@ -507,7 +508,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-extreme",
@@ -517,7 +518,7 @@
     "px": 30,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-fake-it-until-you-make-it",
@@ -527,7 +528,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-fallimento-critico",
@@ -537,7 +538,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-fashion-victim",
@@ -545,9 +546,9 @@
     "name": "Fashion Victim",
     "description": "Apprendi Arte a livello 10",
     "px": 20,
-    "target": 10,
-    "unit": "livelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-flop",
@@ -555,9 +556,9 @@
     "name": "Flop!",
     "description": "Perdi 5 duelli PVP [Non valido per resa]",
     "px": 40,
-    "target": 5,
-    "unit": "duelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-fra-ghiaccio-e-fiamme",
@@ -567,7 +568,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-fuori-uno",
@@ -577,7 +578,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-giramondo",
@@ -585,9 +586,9 @@
     "name": "Giramondo",
     "description": "Spostati in almeno 3 isole differenti",
     "px": 10,
-    "target": 3,
-    "unit": "isole",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-gli-affari-sono-affari",
@@ -595,9 +596,9 @@
     "name": "Gli affari sono affari!",
     "description": "Possiedi come primo proprietario 3 edifici o attività commerciali.",
     "px": 8,
-    "target": 3,
-    "unit": "edifici/attività",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-guarda-che-combo",
@@ -607,7 +608,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-guarda-quante-bolle",
@@ -617,7 +618,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-guarda-sono-cosi-lunghi",
@@ -627,7 +628,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-guarda-un-colosseo",
@@ -637,7 +638,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-hai-voluto-la-bicicletta",
@@ -647,7 +648,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-harakiri",
@@ -657,7 +658,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-ho-l-x-factor",
@@ -665,9 +666,9 @@
     "name": "Ho l'X Factor!",
     "description": "Suona melodie che mutino le statistiche di almeno 5 personaggi differenti, anche in giocate diverse",
     "px": 10,
-    "target": 5,
-    "unit": "PG",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-il-branco",
@@ -675,9 +676,9 @@
     "name": "Il Branco",
     "description": "Possiedi come primo proprietario 3 differenti animali con livello minimo 6",
     "px": 10,
-    "target": 3,
-    "unit": "animali",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-il-mio-mestiere-e-il-cantiere",
@@ -685,9 +686,9 @@
     "name": "Il mio Mestiere è il Cantiere",
     "description": "Costruisci 5 edifici o navi",
     "px": 10,
-    "target": 5,
-    "unit": "costruzioni",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-il-mio-mestiere-e-la-forgia",
@@ -695,9 +696,9 @@
     "name": "Il mio Mestiere è la Forgia",
     "description": "Costruisci 5 armi diverse",
     "px": 10,
-    "target": 5,
-    "unit": "armi",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-il-one-piece-quasi",
@@ -707,7 +708,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-il-paese-del-sole-nascente",
@@ -717,7 +718,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-immortale",
@@ -725,9 +726,9 @@
     "name": "Immortale",
     "description": "Successo in quest senza ricevere danni (MQ e ME esclusi, almeno 4 turni).",
     "px": 15,
-    "target": 4,
-    "unit": "turni",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-imprenditore",
@@ -735,9 +736,9 @@
     "name": "Imprenditore",
     "description": "Possiedi come primo proprietario 5 edifici o attività commerciali (minimo qualità 7).",
     "px": 10,
-    "target": 5,
-    "unit": "edifici/attività",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-in-alto-mare",
@@ -745,9 +746,9 @@
     "name": "In Alto Mare",
     "description": "Apprendi Navigazione a livello 10",
     "px": 20,
-    "target": 10,
-    "unit": "livelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-in-cima-alle-nuvole",
@@ -757,7 +758,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-in-un-flash",
@@ -767,9 +768,8 @@
     "px": 50,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": "",
-    "deadlineDays": 7,
-    "deadlineFrom": "evento"
+    "source": "manual",
+    "windowDays": 7
   },
   {
     "id": "on-jackpot",
@@ -779,7 +779,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-join-the-marine",
@@ -789,7 +789,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-karlo-krakko",
@@ -797,9 +797,9 @@
     "name": "Karlo Krakko",
     "description": "Apprendi Cucina livello 10",
     "px": 20,
-    "target": 10,
-    "unit": "livelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-king-of-quest",
@@ -807,9 +807,9 @@
     "name": "King of Quest",
     "description": "Concludi con successo 5 quest (MQ e ME esclusi) senza finire KO.",
     "px": 10,
-    "target": 5,
-    "unit": "quest",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-l-amico-del-pelo",
@@ -817,9 +817,9 @@
     "name": "L'Amico del Pelo",
     "description": "Apprendi Zoologia a livello 10",
     "px": 20,
-    "target": 10,
-    "unit": "livelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-l-ultimo-samurai",
@@ -829,7 +829,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-la-classe-non-e-acqua",
@@ -839,7 +839,7 @@
     "px": 25,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-la-legge-sono-io",
@@ -849,7 +849,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-la-logica-non-e-un-opinione",
@@ -859,7 +859,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-la-mamma-me-le-dava-piu-forti",
@@ -869,7 +869,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-ladro",
@@ -879,7 +879,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-life-is-strange",
@@ -889,7 +889,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-lumache-fresche",
@@ -899,7 +899,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-lupin",
@@ -907,9 +907,9 @@
     "name": "Lupin",
     "description": "Sottrai 10 oggetti a PNG/PG differenti.",
     "px": 30,
-    "target": 10,
-    "unit": "oggetti",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-ma-che-cactus-e",
@@ -919,7 +919,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-ma-che-isola-e",
@@ -929,7 +929,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-ma-quella-renna-parla",
@@ -939,7 +939,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-mappamondo",
@@ -947,9 +947,9 @@
     "name": "Mappamondo",
     "description": "Esplora almeno 20 isole di trama. Non valido se non presenti nella mappa ufficiale.",
     "px": 30,
-    "target": 20,
-    "unit": "isole",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-medicando",
@@ -957,9 +957,9 @@
     "name": "Medicando",
     "description": "Cura 5 PG differenti (occorre stamp singole giocate)",
     "px": 10,
-    "target": 5,
-    "unit": "PG",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-mediocri-e-meglio",
@@ -969,7 +969,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-meglio-un-uovo-oggi",
@@ -979,7 +979,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-meglio-una-gallina-domani",
@@ -989,7 +989,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-mhhh-che-buono",
@@ -999,7 +999,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-mhhh-squisito",
@@ -1007,9 +1007,9 @@
     "name": "Mhhh! Squisito!",
     "description": "Vieni sfamato per almeno 5 volte da un PG (non valido se ti sfami da solo) (occorre stamp singole giocate)",
     "px": 10,
-    "target": 5,
-    "unit": "cure",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-mi-piace-questo-posto",
@@ -1019,7 +1019,7 @@
     "px": 10,
     "target": 10,
     "unit": "giocate",
-    "prerequisites": ""
+    "source": "plays_same_island"
   },
   {
     "id": "on-monkey-d-dragon",
@@ -1029,7 +1029,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-monkey-d-garp",
@@ -1039,7 +1039,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-moshi-moshi",
@@ -1049,7 +1049,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-natural-20",
@@ -1059,7 +1059,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-no-razza-no-party",
@@ -1069,7 +1069,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-not-too-old",
@@ -1079,7 +1079,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-occhio-per-occhio",
@@ -1089,7 +1089,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-off-you-go",
@@ -1099,7 +1099,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-one-shot",
@@ -1109,7 +1109,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-pagina-di-storia",
@@ -1119,7 +1119,7 @@
     "px": 25,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-parte-del-gruppo",
@@ -1129,7 +1129,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-parte-l-avventura",
@@ -1139,7 +1139,7 @@
     "px": 25,
     "target": 10,
     "unit": "azioni",
-    "prerequisites": ""
+    "source": "actions"
   },
   {
     "id": "on-party-hard",
@@ -1147,9 +1147,9 @@
     "name": "Party Hard",
     "description": "Gioca con 10 PG contemporaneamente (occorrono stamp delle giocate; quest non valide).",
     "px": 25,
-    "target": 10,
-    "unit": "PG",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-pazzo-furioso",
@@ -1159,7 +1159,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-pelle-durissima",
@@ -1167,9 +1167,9 @@
     "name": "Pelle durissima",
     "description": "Esci indenne da 5 Difese Extra (occorre stamp esito del Fato)",
     "px": 15,
-    "target": 5,
-    "unit": "difese",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-poliedrico",
@@ -1177,9 +1177,9 @@
     "name": "Poliedrico",
     "description": "Raggiungi almeno il livello 5 in una classe diversa da quella base",
     "px": 10,
-    "target": 5,
-    "unit": "livelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-professionista-emergente",
@@ -1189,7 +1189,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-pusher",
@@ -1197,9 +1197,9 @@
     "name": "Pusher",
     "description": "Sviluppa 5 veleni (occorre stamp singole giocate)",
     "px": 10,
-    "target": 5,
-    "unit": "veleni",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-quello-vegan",
@@ -1207,9 +1207,9 @@
     "name": "Quello Vegan",
     "description": "Apprendi Botanica a livello 10",
     "px": 20,
-    "target": 10,
-    "unit": "livelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-questo-e-importante",
@@ -1219,7 +1219,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-re-del-ring",
@@ -1227,9 +1227,9 @@
     "name": "Re del Ring",
     "description": "Vinci 10 duelli PVP.",
     "px": 50,
-    "target": 10,
-    "unit": "duelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-re-della-giungla",
@@ -1239,7 +1239,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-redbull",
@@ -1247,9 +1247,9 @@
     "name": "Redbull",
     "description": "Spendi 50 pe in una singola azione.",
     "px": 10,
-    "target": 50,
-    "unit": "PE",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-redbull-overdose",
@@ -1257,9 +1257,9 @@
     "name": "Redbull overdose",
     "description": "Spendi 150 pe in tre turni",
     "px": 30,
-    "target": 150,
-    "unit": "PE",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-ribelle-modello",
@@ -1269,7 +1269,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-rinforzi",
@@ -1279,7 +1279,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-rischio-di-overdose",
@@ -1287,9 +1287,9 @@
     "name": "Rischio di overdose",
     "description": "Utilizza per almeno 5 volte un veleno o un antidoto (occorre stamp singole giocate)",
     "px": 10,
-    "target": 5,
-    "unit": "utilizzi",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-roba-forte",
@@ -1299,7 +1299,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-royal-rumble",
@@ -1307,9 +1307,9 @@
     "name": "Royal Rumble",
     "description": "Partecipa a una quest Duello con altri 9 player (10 pg totali).",
     "px": 35,
-    "target": 9,
-    "unit": "player",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-salpiamo",
@@ -1319,7 +1319,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-salva-salviamoci",
@@ -1327,9 +1327,9 @@
     "name": "Salva Salviamoci",
     "description": "Apprendi Medicina a livello 10",
     "px": 20,
-    "target": 10,
-    "unit": "livelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-salvatore",
@@ -1339,7 +1339,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-shanks-il-rosso",
@@ -1349,7 +1349,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-si-signor-capitano",
@@ -1359,7 +1359,7 @@
     "px": 8,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-sogno-o-son-desto",
@@ -1369,7 +1369,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-soli-mai",
@@ -1379,7 +1379,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-soli-mai-underdog",
@@ -1389,7 +1389,7 @@
     "px": 30,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-sono-ganzo",
@@ -1399,7 +1399,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-sono-sgravo",
@@ -1409,7 +1409,7 @@
     "px": 8,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-sta-per-esplodere",
@@ -1417,9 +1417,9 @@
     "name": "Sta per esplodere",
     "description": "Utilizza per almeno 5 volte composti alchemici in quest (occorre stamp singole giocate)",
     "px": 10,
-    "target": 5,
-    "unit": "utilizzi",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-stai-bene-fuffy",
@@ -1427,9 +1427,9 @@
     "name": "Stai bene Fuffy?",
     "description": "Cura 3 volte un animale (occorre stamp singole giocate)",
     "px": 10,
-    "target": 3,
-    "unit": "cure animali",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-stalker",
@@ -1437,9 +1437,9 @@
     "name": "Stalker",
     "description": "Apprendi Cultura a livello 10",
     "px": 20,
-    "target": 10,
-    "unit": "livelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-superbo",
@@ -1447,9 +1447,9 @@
     "name": "Superbo",
     "description": "Successo in una QG, in una QE, in una Globale, o in un Duello senza alcun uso di Skill Attive (almeno 4 turni di gioco totali della quest)",
     "px": 15,
-    "target": 4,
-    "unit": "turni",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-t-kon-losco",
@@ -1459,7 +1459,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-tanta-casualita",
@@ -1467,9 +1467,9 @@
     "name": "Tanta casualità",
     "description": "Partecipa a 10 MQ (non valido nel caso si esca prima di fine quest)",
     "px": 15,
-    "target": 10,
-    "unit": "MQ",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-tante-organizzazioni",
@@ -1479,7 +1479,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-taxi-driver",
@@ -1487,9 +1487,9 @@
     "name": "Taxi Driver",
     "description": "Effettua da navigatore un viaggio da isola ad isola trasportando almeno 5 diversi PG contemporaneamente (occorre stamp singole giocate)",
     "px": 10,
-    "target": 5,
-    "unit": "PG",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-testa-o-uovo",
@@ -1499,7 +1499,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-the-champions",
@@ -1507,9 +1507,9 @@
     "name": "The Champions!",
     "description": "Vinci 5 duelli PVP",
     "px": 40,
-    "target": 5,
-    "unit": "duelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-ti-salvo-io",
@@ -1519,7 +1519,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-tossico",
@@ -1529,7 +1529,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-tra-amazzoni-e-serpenti",
@@ -1539,7 +1539,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-tutti-nella-bolla",
@@ -1549,7 +1549,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-un-piccolo-giardino",
@@ -1559,7 +1559,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-unbroken",
@@ -1567,9 +1567,9 @@
     "name": "Unbroken",
     "description": "Perdi 10 duelli PVP [Non valido per resa]",
     "px": 50,
-    "target": 10,
-    "unit": "duelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-uncle-sam-1",
@@ -1579,7 +1579,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-uncle-sam-2",
@@ -1589,7 +1589,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-uncle-sam-3",
@@ -1599,7 +1599,7 @@
     "px": 25,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-uncle-sam-4",
@@ -1609,7 +1609,7 @@
     "px": 35,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-uncle-sam-5",
@@ -1619,7 +1619,7 @@
     "px": 50,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-unita-speciale",
@@ -1627,9 +1627,9 @@
     "name": "Unità Speciale",
     "description": "Apprendi Militare a livello 10",
     "px": 20,
-    "target": 10,
-    "unit": "livelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "on-v-per-vendetta",
@@ -1639,7 +1639,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-v-i-p",
@@ -1649,7 +1649,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-vendere-cara-la-pelle",
@@ -1659,7 +1659,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-vincere-che-fatica",
@@ -1669,7 +1669,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-wanted-1",
@@ -1677,9 +1677,9 @@
     "name": "Wanted! 1",
     "description": "Ottieni una taglia pari o superiore a 5 milioni di berry",
     "px": 10,
-    "target": 5,
-    "unit": "milioni di berry",
-    "prerequisites": ""
+    "target": 5000000,
+    "unit": "berry",
+    "source": "bounty"
   },
   {
     "id": "on-wanted-2",
@@ -1687,9 +1687,9 @@
     "name": "Wanted! 2",
     "description": "Ottieni una taglia pari o superiore a 35 milioni di berry",
     "px": 15,
-    "target": 35,
-    "unit": "milioni di berry",
-    "prerequisites": ""
+    "target": 35000000,
+    "unit": "berry",
+    "source": "bounty"
   },
   {
     "id": "on-wanted-3",
@@ -1697,9 +1697,9 @@
     "name": "Wanted! 3",
     "description": "Ottieni una taglia pari o superiore a 100 milioni di berry",
     "px": 25,
-    "target": 100,
-    "unit": "milioni di berry",
-    "prerequisites": ""
+    "target": 100000000,
+    "unit": "berry",
+    "source": "bounty"
   },
   {
     "id": "on-wanted-4",
@@ -1707,9 +1707,9 @@
     "name": "Wanted! 4",
     "description": "Ottieni una taglia pari o superiore a 500 milioni di berry.",
     "px": 35,
-    "target": 500,
-    "unit": "milioni di berry",
-    "prerequisites": ""
+    "target": 500000000,
+    "unit": "berry",
+    "source": "bounty"
   },
   {
     "id": "on-wanted-5",
@@ -1717,9 +1717,9 @@
     "name": "Wanted! 5",
     "description": "Ottieni una taglia pari o superiore a 1 miliardo di berry.",
     "px": 50,
-    "target": 1,
-    "unit": "requisiti",
-    "prerequisites": ""
+    "target": 1000000000,
+    "unit": "berry",
+    "source": "bounty"
   },
   {
     "id": "on-zenigata",
@@ -1729,7 +1729,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-background-saggi-approved",
@@ -1739,7 +1739,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-pg-1-l-inizio-della-storia",
@@ -1749,7 +1749,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-pg-2-bozza-di-un-epopea",
@@ -1759,7 +1759,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-pg-3-definendo-la-leggenda",
@@ -1769,7 +1769,7 @@
     "px": 30,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-pg-4-un-nome-inciso-negli-annali",
@@ -1779,7 +1779,7 @@
     "px": 40,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-pg-5-il-piu-forte-del-mondo",
@@ -1789,7 +1789,7 @@
     "px": 50,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "on-pv-questo-e-mio",
@@ -1799,7 +1799,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-100-online",
@@ -1807,9 +1807,9 @@
     "name": "100 online",
     "description": "Compari nella lista presenti con altri 99 player. Valido solo tramite screenshot. [No doppi o png]",
     "px": 50,
-    "target": 99,
-    "unit": "player",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-amante-delle-feste",
@@ -1817,9 +1817,9 @@
     "name": "Amante delle feste!",
     "description": "Interagisci con almeno 5 PG, oltre al tuo contemporaneamente con almeno 3 azioni cadauno, per 10 volte differenti.",
     "px": 50,
-    "target": 10,
-    "unit": "eventi",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-amico-dei-nabbetti",
@@ -1827,9 +1827,9 @@
     "name": "Amico dei nabbetti",
     "description": "Gioca almeno 5 volte con un PG neo-iscritto (da meno di 30 giorni) (occorre stamp singole giocate)",
     "px": 25,
-    "target": 5,
-    "unit": "giocate",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-anche-io-su-gdr-online",
@@ -1839,7 +1839,7 @@
     "px": 100,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-ancor-piu-bravo",
@@ -1849,7 +1849,7 @@
     "px": 25,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-ar-che-tipo",
@@ -1859,7 +1859,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-arlong",
@@ -1867,9 +1867,9 @@
     "name": "Arlong",
     "description": "Raggiungi 10000 punti Fama Positiva o Negativa",
     "px": 10,
-    "target": 10000,
-    "unit": "fama",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-art-attack-1-fffatto",
@@ -1877,9 +1877,9 @@
     "name": "Art Attack 1, \"Fffatto??\"",
     "description": "Da grafico del NW, soddisfa le richieste e consegna 10 lavori per l'utenza.",
     "px": 5,
-    "target": 10,
-    "unit": "lavori",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-art-attack-2-picasso-ti-fa-un-baffo",
@@ -1887,9 +1887,9 @@
     "name": "Art Attack 2, Picasso ti fa un baffo!",
     "description": "Da grafico del NW, soddisfa le richieste e consegna 20 lavori per l'utenza.",
     "px": 10,
-    "target": 20,
-    "unit": "lavori",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-art-attack-3-minc-hielangelo",
@@ -1897,9 +1897,9 @@
     "name": "Art Attack 3, Minc-hielangelo!",
     "description": "Da grafico del NW, soddisfa le richieste e consegna 50 lavori per l'utenza.",
     "px": 20,
-    "target": 50,
-    "unit": "lavori",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-barbanera",
@@ -1907,9 +1907,9 @@
     "name": "Barbanera",
     "description": "Raggiungi 50000 punti Fama Positiva o Negativa",
     "px": 50,
-    "target": 50000,
-    "unit": "fama",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-benvenuto-tra-noi-1",
@@ -1917,11 +1917,11 @@
     "name": "Benvenuto tra Noi! 1",
     "description": "Raggiungi il livello D (25-39) entro sei mesi dalla data d'Iscrizione. Valido solo per neo-iscritti!",
     "px": 100,
-    "target": 1,
-    "unit": "requisiti",
-    "prerequisites": "",
+    "target": 25,
+    "unit": "livello",
+    "source": "level",
     "deadlineMonths": 6,
-    "deadlineFrom": "iscrizione"
+    "deadlineFrom": "registration"
   },
   {
     "id": "off-benvenuto-tra-noi-2",
@@ -1929,11 +1929,11 @@
     "name": "Benvenuto tra Noi! 2",
     "description": "Raggiungi il livello B (55-69) entro un anno dalla data d'iscrizione. Valido solo per i neo-iscritti!",
     "px": 150,
-    "target": 1,
-    "unit": "requisiti",
-    "prerequisites": "",
+    "target": 55,
+    "unit": "livello",
+    "source": "level",
     "deadlineMonths": 12,
-    "deadlineFrom": "iscrizione"
+    "deadlineFrom": "registration"
   },
   {
     "id": "off-bounty-hunter-1",
@@ -1943,7 +1943,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-bounty-hunter-2",
@@ -1951,9 +1951,9 @@
     "name": "Bounty Hunter 2",
     "description": "Cattura e consegna 3 ricercati (oltre al primo di Bounty Hunter 1, quindi totale 4)",
     "px": 25,
-    "target": 4,
-    "unit": "ricercati",
-    "prerequisites": "Bounty Hunter 1; totale complessivo di 4 ricercati."
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-bug-hunter-1",
@@ -1963,7 +1963,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-bug-hunter-2",
@@ -1973,7 +1973,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-buggy-il-clown",
@@ -1981,9 +1981,9 @@
     "name": "Buggy il Clown",
     "description": "Raggiungi 1000 punti Fama Positiva o Negativa",
     "px": 5,
-    "target": 1000,
-    "unit": "fama",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-buon-compleanno",
@@ -1993,7 +1993,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-buon-compleanno-10",
@@ -2003,7 +2003,7 @@
     "px": 50,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-buon-compleanno-11",
@@ -2013,7 +2013,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-buon-compleanno-12",
@@ -2023,7 +2023,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-buon-compleanno-13",
@@ -2033,7 +2033,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-buon-compleanno-14",
@@ -2043,7 +2043,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-buon-compleanno-15",
@@ -2053,7 +2053,7 @@
     "px": 50,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-buon-compleanno-16",
@@ -2063,7 +2063,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-buon-compleanno-2",
@@ -2073,7 +2073,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-buon-compleanno-3",
@@ -2083,7 +2083,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-buon-compleanno-4",
@@ -2093,7 +2093,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-buon-compleanno-5",
@@ -2103,7 +2103,7 @@
     "px": 50,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-buon-compleanno-6",
@@ -2113,7 +2113,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-buon-compleanno-7",
@@ -2123,7 +2123,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-buon-compleanno-8",
@@ -2133,7 +2133,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-buon-compleanno-9",
@@ -2143,7 +2143,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-buon-samaritano",
@@ -2151,9 +2151,9 @@
     "name": "Buon Samaritano",
     "description": "Regala un oggetto dal valore di mercato di almeno 10 milioni di berry ad un altro pg.",
     "px": 25,
-    "target": 10,
-    "unit": "milioni di berry",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-caro-babbo-natale",
@@ -2163,7 +2163,7 @@
     "px": 50,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-che-bella-lavagna",
@@ -2173,7 +2173,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-che-bello-fare-regali",
@@ -2183,7 +2183,7 @@
     "px": 25,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-ci-penso-io",
@@ -2191,9 +2191,9 @@
     "name": "Ci penso io!",
     "description": "Ricopri, attivamente, un ruolo OFF per almeno 3 mesi.",
     "px": 10,
-    "target": 3,
-    "unit": "mesi",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-ciao-pivello",
@@ -2203,7 +2203,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-coach",
@@ -2211,9 +2211,9 @@
     "name": "Coach",
     "description": "Raggiungi il livello 30 in una classe",
     "px": 5,
-    "target": 30,
-    "unit": "livelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-collezionista-base",
@@ -2221,9 +2221,9 @@
     "name": "Collezionista Base",
     "description": "Sblocca 25 trofei.",
     "px": 15,
-    "target": 25,
-    "unit": "trofei",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-collezionista-pro",
@@ -2231,9 +2231,9 @@
     "name": "Collezionista Pro",
     "description": "Sblocca 45 trofei.",
     "px": 15,
-    "target": 45,
-    "unit": "trofei",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-collezionista-star",
@@ -2241,9 +2241,9 @@
     "name": "Collezionista Star",
     "description": "Sblocca 60 trofei.",
     "px": 15,
-    "target": 60,
-    "unit": "trofei",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-collezionista-top",
@@ -2251,9 +2251,9 @@
     "name": "Collezionista Top!",
     "description": "Sblocca 80 trofei.",
     "px": 15,
-    "target": 80,
-    "unit": "trofei",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-collezionista-over-the-apex",
@@ -2261,9 +2261,9 @@
     "name": "Collezionista [Over] the Apex!",
     "description": "Sblocca 100 trofei.",
     "px": 15,
-    "target": 100,
-    "unit": "trofei",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-collezionista-over-the-imagination",
@@ -2271,9 +2271,9 @@
     "name": "Collezionista [Over] the Imagination",
     "description": "Sblocca 150 Trofei",
     "px": 20,
-    "target": 150,
-    "unit": "trofei",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-collezionista-over-the-legend",
@@ -2281,9 +2281,9 @@
     "name": "Collezionista [Over] the Legend",
     "description": "Sblocca 200 Trofei",
     "px": 30,
-    "target": 200,
-    "unit": "trofei",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-come-insegno-bene",
@@ -2291,9 +2291,9 @@
     "name": "Come insegno bene!",
     "description": "Da Guida, aiuta 5 utenti diversi a risolvere dei dubbi sulle meccaniche del gioco.",
     "px": 10,
-    "target": 5,
-    "unit": "utenti",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-complimenti",
@@ -2303,7 +2303,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-crocodile",
@@ -2311,9 +2311,9 @@
     "name": "Crocodile",
     "description": "Raggiungi 20000 punti Fama Positiva o Negativa",
     "px": 20,
-    "target": 20000,
-    "unit": "fama",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-davide-o-golia",
@@ -2323,7 +2323,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-discord",
@@ -2333,7 +2333,7 @@
     "px": 25,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-doflamingo",
@@ -2341,9 +2341,9 @@
     "name": "Doflamingo",
     "description": "Raggiungi 35000 punti Fama Positiva o Negativa",
     "px": 35,
-    "target": 35000,
-    "unit": "fama",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-esperto-del-ruolo",
@@ -2351,9 +2351,9 @@
     "name": "Esperto del ruolo",
     "description": "Ricopri, attivamente, un ruolo OFF per almeno 6 mesi.",
     "px": 20,
-    "target": 6,
-    "unit": "mesi",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-fantanw-challenger",
@@ -2363,7 +2363,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-fantanw-the-champion",
@@ -2373,7 +2373,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-giovane-promessa-pro",
@@ -2383,9 +2383,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": "",
-    "deadlineMonths": 12,
-    "deadlineFrom": "iscrizione"
+    "source": "manual"
   },
   {
     "id": "off-giovane-promessa-top",
@@ -2395,9 +2393,7 @@
     "px": 35,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": "",
-    "deadlineMonths": 12,
-    "deadlineFrom": "iscrizione"
+    "source": "manual"
   },
   {
     "id": "off-gol-d-roger",
@@ -2405,9 +2401,9 @@
     "name": "Gol D. Roger",
     "description": "Raggiungi 100000 punti Fama Positiva o Negativa",
     "px": 300,
-    "target": 100000,
-    "unit": "fama",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-guru",
@@ -2415,9 +2411,9 @@
     "name": "Guru",
     "description": "Raggiungi il livello 70 in una classe",
     "px": 20,
-    "target": 70,
-    "unit": "livelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-hanshi-il-maestro-dei-maestri",
@@ -2425,9 +2421,9 @@
     "name": "Hanshi, il Maestro dei Maestri",
     "description": "Insegna una tonalità dell'haki a 5 pg diversi.",
     "px": 40,
-    "target": 5,
-    "unit": "PG",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-hello-world",
@@ -2437,7 +2433,7 @@
     "px": 0,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-i-sogni-degli-altri",
@@ -2447,7 +2443,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-il-grinch",
@@ -2457,7 +2453,7 @@
     "px": 50,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-il-signore-delle-feste",
@@ -2465,9 +2461,9 @@
     "name": "Il Signore delle Feste!",
     "description": "Interagisci con almeno 5 PG contemporaneamente con almeno 3 azioni cadauno, per 20 volte differenti.",
     "px": 50,
-    "target": 20,
-    "unit": "eventi",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-in-questa-nave-di-pirati-noi-siamo-capitati",
@@ -2477,7 +2473,7 @@
     "px": 50,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-infaticabile-1",
@@ -2485,9 +2481,9 @@
     "name": "Infaticabile 1",
     "description": "Mastera da Fato 3 quest libere di buona qualità",
     "px": 3,
-    "target": 3,
-    "unit": "quest",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-infaticabile-2",
@@ -2495,9 +2491,9 @@
     "name": "Infaticabile 2",
     "description": "Mastera da Fato 7 quest libere di buona qualità (oltre alle 3 di Infaticabile 1)",
     "px": 5,
-    "target": 7,
-    "unit": "quest",
-    "prerequisites": "Infaticabile 1; totale complessivo di 7 quest."
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-infaticabile-3",
@@ -2505,9 +2501,9 @@
     "name": "Infaticabile 3",
     "description": "Mastera da Fato 15 quest libere di buona qualità (oltre alle 10 di Infaticabile 1 e 2)",
     "px": 15,
-    "target": 15,
-    "unit": "quest",
-    "prerequisites": "Infaticabile 1 e 2; totale complessivo di 15 quest."
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-it-s-over-3-000",
@@ -2515,9 +2511,9 @@
     "name": "It's over 3(000)!",
     "description": "Mastera 3 MQ in un mese.",
     "px": 15,
-    "target": 3,
-    "unit": "MQ",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-it-s-over-5-000",
@@ -2525,9 +2521,9 @@
     "name": "It's over 5(000)!",
     "description": "Mastera 5 MQ in un mese.",
     "px": 35,
-    "target": 5,
-    "unit": "MQ",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-it-s-over-9-000",
@@ -2535,9 +2531,9 @@
     "name": "It's over 9(000)!",
     "description": "Mastera 9 MQ in un mese.",
     "px": 50,
-    "target": 9,
-    "unit": "MQ",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-i-m-loving-it",
@@ -2547,7 +2543,7 @@
     "px": 40,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-jingle-bell",
@@ -2557,7 +2553,7 @@
     "px": 50,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-la-media-e-importante",
@@ -2567,9 +2563,9 @@
     "px": 50,
     "target": 300,
     "unit": "azioni",
-    "prerequisites": "",
-    "deadlineMonths": 3,
-    "deadlineFrom": "iscrizione"
+    "source": "actions",
+    "deadlineDays": 90,
+    "deadlineFrom": "registration"
   },
   {
     "id": "off-like-a-boss",
@@ -2579,7 +2575,7 @@
     "px": 50,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-like-a-pro",
@@ -2589,7 +2585,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-living-legend",
@@ -2599,7 +2595,7 @@
     "px": 100,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-matrix",
@@ -2607,9 +2603,9 @@
     "name": "Matrix",
     "description": "Ricopri, attivamente, il ruolo di Coder per almeno 3 mesi.",
     "px": 30,
-    "target": 3,
-    "unit": "mesi",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-merry-il-maggiordomo",
@@ -2617,9 +2613,9 @@
     "name": "Merry il Maggiordomo",
     "description": "Raggiungi 100 punti Fama Positiva o Negativa",
     "px": 5,
-    "target": 100,
-    "unit": "fama",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-miglior-amico-dei-neo-iscritti",
@@ -2627,9 +2623,9 @@
     "name": "Miglior amico dei neo-iscritti",
     "description": "Gioca almeno 20 volte con un PG neo-iscritto (almeno da 30 giorni) (occorre stamp singole giocate)",
     "px": 50,
-    "target": 20,
-    "unit": "giocate",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-narratore-provetto",
@@ -2639,9 +2635,8 @@
     "px": 35,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": "",
-    "deadlineDays": 7,
-    "deadlineFrom": "evento"
+    "source": "manual",
+    "windowDays": 7
   },
   {
     "id": "off-noi-siamo-legione",
@@ -2649,9 +2644,9 @@
     "name": "Noi siamo Legione",
     "description": "Masterando attivamente, aiuta il gruppo master ad effettuare almeno 20 quest in un mese.",
     "px": 30,
-    "target": 20,
-    "unit": "quest",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-occhio-all-haki",
@@ -2661,7 +2656,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-organizzarsi-e-tutto",
@@ -2669,9 +2664,9 @@
     "name": "Organizzarsi è Tutto",
     "description": "Mastera da Fato 3 duelli (dall'inizio alla fine, senza passaggi di mano)",
     "px": 5,
-    "target": 3,
-    "unit": "duelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-partenza-col-botto-1",
@@ -2681,9 +2676,9 @@
     "px": 50,
     "target": 5,
     "unit": "skills",
-    "prerequisites": "",
+    "source": "manual",
     "deadlineDays": 15,
-    "deadlineFrom": "iscrizione"
+    "deadlineFrom": "registration"
   },
   {
     "id": "off-partenza-col-botto-2",
@@ -2693,9 +2688,9 @@
     "px": 50,
     "target": 8,
     "unit": "skills",
-    "prerequisites": "",
+    "source": "manual",
     "deadlineDays": 45,
-    "deadlineFrom": "iscrizione"
+    "deadlineFrom": "registration"
   },
   {
     "id": "off-per-le-guide-sei-ok",
@@ -2705,7 +2700,7 @@
     "px": 70,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-piacere-mio",
@@ -2715,9 +2710,7 @@
     "px": 50,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": "",
-    "deadlineDays": 30,
-    "deadlineFrom": "iscrizione"
+    "source": "manual"
   },
   {
     "id": "off-pilastro-della-land",
@@ -2727,7 +2720,7 @@
     "px": 50,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-pozzo-di-sapienza",
@@ -2735,9 +2728,9 @@
     "name": "Pozzo di sapienza",
     "description": "Da Guida, aiuta 15 utenti diversi a risolvere dei dubbi sulle meccaniche del gioco.",
     "px": 20,
-    "target": 15,
-    "unit": "utenti",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-prime-azioni",
@@ -2747,9 +2740,9 @@
     "px": 30,
     "target": 100,
     "unit": "azioni",
-    "prerequisites": "",
+    "source": "actions",
     "deadlineDays": 30,
-    "deadlineFrom": "iscrizione"
+    "deadlineFrom": "registration"
   },
   {
     "id": "off-qui-la-festa",
@@ -2757,9 +2750,9 @@
     "name": "Qui la festa!",
     "description": "Interagisci con almeno 5 PG contemporaneamente con almeno 3 azioni cadauno.",
     "px": 10,
-    "target": 5,
-    "unit": "PG",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-secchione",
@@ -2769,7 +2762,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-sensei",
@@ -2777,9 +2770,9 @@
     "name": "Sensei",
     "description": "Raggiungi il livello 45 in una classe",
     "px": 10,
-    "target": 45,
-    "unit": "livelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-sensei-si-nasce-non-si-diventa",
@@ -2787,9 +2780,9 @@
     "name": "Sensei si nasce, non si diventa.",
     "description": "Insegna una tonalità dell'haki per 3 volte.",
     "px": 20,
-    "target": 3,
-    "unit": "insegnamenti",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-serve-una-mano",
@@ -2799,7 +2792,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-sgungami-sto-trofeo",
@@ -2809,7 +2802,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-sono-troppo-bravo",
@@ -2819,7 +2812,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-sopra-la-media",
@@ -2829,7 +2822,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-sopraffino",
@@ -2837,9 +2830,9 @@
     "name": "Sopraffino",
     "description": "Raggiungi il livello 60 in una classe",
     "px": 15,
-    "target": 60,
-    "unit": "livelli",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-super-compendio",
@@ -2849,7 +2842,7 @@
     "px": 100,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-thug-life",
@@ -2859,7 +2852,7 @@
     "px": 25,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-tra-cavi-e-giganti",
@@ -2869,7 +2862,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-triplete",
@@ -2879,7 +2872,7 @@
     "px": 40,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-un-bel-secondario",
@@ -2889,7 +2882,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-videomaker",
@@ -2899,7 +2892,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-videoshare",
@@ -2909,7 +2902,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-volonta-eccelsa",
@@ -2919,7 +2912,7 @@
     "px": 80,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-background-ho-proprio-un-bel-bg",
@@ -2929,7 +2922,7 @@
     "px": 40,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-background-ho-proprio-un-bell-avatar",
@@ -2939,7 +2932,7 @@
     "px": 40,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-cards-e-l-ora-dello-sbusto",
@@ -2947,9 +2940,9 @@
     "name": "[Cards] È l'ora dello sbusto",
     "description": "Apri 5 pacchetti di carte.",
     "px": 5,
-    "target": 5,
-    "unit": "pacchetti",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-cards-guarda-mamma-sono-famoso",
@@ -2959,7 +2952,7 @@
     "px": 5,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-cards-il-re-dei-giochi",
@@ -2969,7 +2962,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-cards-questione-di-trama",
@@ -2979,7 +2972,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-fm1-star-platinum-heavy-punch",
@@ -2989,7 +2982,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-fm2-star-platinum-ora-barrage",
@@ -2997,9 +2990,9 @@
     "name": "[FM2] Star Platinum: ORA Barrage",
     "description": "Vieni nominato Fato del Mese cinque volte.",
     "px": 40,
-    "target": 5,
-    "unit": "nomine",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-fm3-star-platinum-el-mundo",
@@ -3007,9 +3000,9 @@
     "name": "[FM3] Star Platinum: EL MUNDO",
     "description": "Vieni nominato Fato del Mese dieci volte.",
     "px": 100,
-    "target": 10,
-    "unit": "nomine",
-    "prerequisites": ""
+    "target": 1,
+    "unit": "requisiti",
+    "source": "manual"
   },
   {
     "id": "off-referall-1-tavolo-qualita-dieci",
@@ -3019,7 +3012,7 @@
     "px": 100,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-1-tavolo-spazioso",
@@ -3029,7 +3022,7 @@
     "px": 60,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-10-tavoli-qualita-dieci",
@@ -3039,7 +3032,7 @@
     "px": 60,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-10-tavoli-spaziosi",
@@ -3049,7 +3042,7 @@
     "px": 30,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-2-tavoli-qualita-dieci",
@@ -3059,7 +3052,7 @@
     "px": 60,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-2-tavoli-spaziosi",
@@ -3069,7 +3062,7 @@
     "px": 30,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-3-tavoli-qualita-dieci",
@@ -3079,7 +3072,7 @@
     "px": 60,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-3-tavoli-spaziosi",
@@ -3089,7 +3082,7 @@
     "px": 30,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-4-tavoli-qualita-dieci",
@@ -3099,7 +3092,7 @@
     "px": 60,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-4-tavoli-spaziosi",
@@ -3109,7 +3102,7 @@
     "px": 30,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-5-tavoli-qualita-dieci",
@@ -3119,7 +3112,7 @@
     "px": 60,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-5-tavoli-spaziosi",
@@ -3129,7 +3122,7 @@
     "px": 30,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-6-tavoli-qualita-dieci",
@@ -3139,7 +3132,7 @@
     "px": 60,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-6-tavoli-spaziosi",
@@ -3149,7 +3142,7 @@
     "px": 30,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-7-tavoli-qualita-dieci",
@@ -3159,7 +3152,7 @@
     "px": 60,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-7-tavoli-spaziosi",
@@ -3169,7 +3162,7 @@
     "px": 30,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-8-tavoli-qualita-dieci",
@@ -3179,7 +3172,7 @@
     "px": 60,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-8-tavoli-spaziosi",
@@ -3189,7 +3182,7 @@
     "px": 30,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-9-tavoli-qualita-dieci",
@@ -3199,7 +3192,7 @@
     "px": 60,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-9-tavoli-spaziosi",
@@ -3209,7 +3202,7 @@
     "px": 30,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-aggiungi-1-posto-a-tavola",
@@ -3219,7 +3212,7 @@
     "px": 50,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-aggiungi-10-posti-a-tavola",
@@ -3229,7 +3222,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-aggiungi-2-posti-a-tavola",
@@ -3239,7 +3232,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-aggiungi-3-posti-a-tavola",
@@ -3249,7 +3242,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-aggiungi-4-posti-a-tavola",
@@ -3259,7 +3252,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-aggiungi-5-posti-a-tavola",
@@ -3269,7 +3262,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-aggiungi-6-posti-a-tavola",
@@ -3279,7 +3272,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-aggiungi-7-posti-a-tavola",
@@ -3289,7 +3282,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-aggiungi-8-posti-a-tavola",
@@ -3299,7 +3292,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-aggiungi-9-posti-a-tavola",
@@ -3309,7 +3302,7 @@
     "px": 10,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-e-permesso",
@@ -3319,7 +3312,7 @@
     "px": 100,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-mi-piace-il-new-world",
@@ -3329,7 +3322,7 @@
     "px": 30,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-rayleigh",
@@ -3339,7 +3332,7 @@
     "px": 100,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "off-referall-troppo-togo-il-new-world",
@@ -3349,7 +3342,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-a-marine-like-garp",
@@ -3359,7 +3352,7 @@
     "px": 100,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-a-marine-like-kizaru",
@@ -3369,7 +3362,7 @@
     "px": 150,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-a-marine-like-koby",
@@ -3379,7 +3372,7 @@
     "px": 50,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-affronta-la-flotta-di-un-imperatore",
@@ -3389,7 +3382,7 @@
     "px": 40,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-affronta-una-supernova",
@@ -3399,7 +3392,7 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-che-mira",
@@ -3409,7 +3402,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-fondatore",
@@ -3419,7 +3412,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-fuga-dagli-inferi",
@@ -3429,7 +3422,7 @@
     "px": 30,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-giu-nei-mari",
@@ -3439,7 +3432,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-non-e-la-mia-ora",
@@ -3449,7 +3442,7 @@
     "px": 30,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-non-e-questione-di-fama",
@@ -3459,7 +3452,7 @@
     "px": 25,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-non-e-questione-di-gradi",
@@ -3469,7 +3462,7 @@
     "px": 25,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-non-era-troppo-grasso",
@@ -3479,7 +3472,7 @@
     "px": 25,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-pagina-di-storia",
@@ -3489,7 +3482,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-quello-social",
@@ -3499,7 +3492,7 @@
     "px": 8,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-sconfiggi-un-ammiraglio",
@@ -3509,7 +3502,7 @@
     "px": 100,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-sconfiggi-un-imperatore",
@@ -3519,7 +3512,7 @@
     "px": 100,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-shangri-la",
@@ -3529,7 +3522,7 @@
     "px": 25,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-shichibukai",
@@ -3539,7 +3532,7 @@
     "px": 25,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-su-nei-cieli",
@@ -3549,7 +3542,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-supernova",
@@ -3557,9 +3550,9 @@
     "name": "Supernova",
     "description": "Hai guadagnato una taglia superiore ai 100 milioni di berry",
     "px": 15,
-    "target": 100,
-    "unit": "milioni di berry",
-    "prerequisites": ""
+    "target": 100000000,
+    "unit": "berry",
+    "source": "bounty"
   },
   {
     "id": "storia-the-boss-a",
@@ -3569,7 +3562,7 @@
     "px": 20,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-the-boss-s",
@@ -3579,7 +3572,7 @@
     "px": 25,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-the-boss-z",
@@ -3589,7 +3582,7 @@
     "px": 30,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-tutto-mio",
@@ -3599,7 +3592,7 @@
     "px": 30,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   },
   {
     "id": "storia-wanted-like-luffy",
@@ -3607,9 +3600,9 @@
     "name": "Wanted like Luffy!",
     "description": "Ottieni una taglia pari o superiore a 1.500.000.000 di berry.",
     "px": 50,
-    "target": 1,
-    "unit": "requisiti",
-    "prerequisites": ""
+    "target": 1500000000,
+    "unit": "berry",
+    "source": "bounty"
   },
   {
     "id": "storia-wanted-like-roger",
@@ -3617,9 +3610,9 @@
     "name": "Wanted like Roger!",
     "description": "Ottieni una taglia pari o superiore a 5.564.800.000 di berry.",
     "px": 200,
-    "target": 1,
-    "unit": "requisiti",
-    "prerequisites": ""
+    "target": 5564800000,
+    "unit": "berry",
+    "source": "bounty"
   },
   {
     "id": "storia-wanted-like-shanks",
@@ -3627,9 +3620,9 @@
     "name": "Wanted like Shanks!",
     "description": "Ottieni una taglia pari o superiore a 4.048.900.000 di berry.",
     "px": 150,
-    "target": 1,
-    "unit": "requisiti",
-    "prerequisites": ""
+    "target": 4048900000,
+    "unit": "berry",
+    "source": "bounty"
   },
   {
     "id": "storia-wanted-like-teach",
@@ -3637,9 +3630,9 @@
     "name": "Wanted like Teach!",
     "description": "Ottieni una taglia pari o superiore a 2.247.600.000 di berry.",
     "px": 100,
-    "target": 1,
-    "unit": "requisiti",
-    "prerequisites": ""
+    "target": 2247600000,
+    "unit": "berry",
+    "source": "bounty"
   },
   {
     "id": "storia-you-can-be-a-hero",
@@ -3649,6 +3642,6 @@
     "px": 15,
     "target": 1,
     "unit": "requisiti",
-    "prerequisites": ""
+    "source": "manual"
   }
 ]
